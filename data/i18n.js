@@ -72,7 +72,17 @@ const I18N = {
     contact_text: "¿Dudas, colaboraciones o reseñas? Escríbeme:",
     email: "academiafx7@gmail.com",
     back_top: "Volver arriba",
-    footer: "© 2026 Luis Risueño Gómez. Todos los derechos reservados."
+    footer: "© 2026 Luis Risueño Gómez. Todos los derechos reservados.",
+    faq_title: "Preguntas frecuentes",
+    faq_sub: "Lo que más preguntan los lectores antes de elegir un libro.",
+    faq: [
+      { q: "¿Quién es Luis Risueño Gómez?", a: "Es un autor español especializado en trading, formado en Ciencias Económicas y con años de práctica real en los mercados financieros. Ha escrito una biblioteca de más de 48 libros educativos sobre Forex, Smart Money Concepts, el método ICT, scalping, acción del precio, Wyckoff y psicología del trading." },
+      { q: "¿Sobre qué tratan sus libros de trading?", a: "Cubren Forex, Smart Money Concepts (SMC), el método ICT, scalping, acción del precio, patrones chartistas, velas japonesas, Wyckoff, gestión del riesgo, indicadores técnicos y psicología del trading, siempre con un enfoque práctico y ejemplos sobre gráficos reales." },
+      { q: "¿Son libros aptos para principiantes?", a: "Sí. La biblioteca incluye títulos introductorios como \"Introducción al Trading\" o \"Trading para Novatos\", además de obras más avanzadas sobre Smart Money y el método ICT para quien ya tiene experiencia." },
+      { q: "¿En qué idiomas están disponibles los libros de Luis Risueño Gómez?", a: "En español, inglés, francés, alemán e italiano. Cada edición se compra en la tienda de Amazon correspondiente a ese idioma." },
+      { q: "¿Dónde puedo comprar los libros de Luis Risueño Gómez?", a: "Todos sus libros están disponibles en formato digital y en papel en Amazon (amazon.es, amazon.com, amazon.fr, amazon.de y amazon.it). En esta web encontrarás el enlace directo a cada edición." },
+      { q: "¿Los libros garantizan ganancias en el trading?", a: "No. Son contenido exclusivamente educativo. Operar en los mercados financieros implica riesgo y ningún libro puede garantizar resultados ni sustituye el asesoramiento financiero profesional." }
+    ]
   },
   en: {
     brand: "Luis Risueño Gómez",
@@ -113,7 +123,17 @@ const I18N = {
     contact_text: "Questions, collaborations or reviews? Write to me:",
     email: "academiafx7@gmail.com",
     back_top: "Back to top",
-    footer: "© 2026 Luis Risueño Gómez. All rights reserved."
+    footer: "© 2026 Luis Risueño Gómez. All rights reserved.",
+    faq_title: "Frequently asked questions",
+    faq_sub: "What readers ask most before choosing a book.",
+    faq: [
+      { q: "Who is Luis Risueño Gómez?", a: "He is a Spanish author specialised in trading, with a degree in Economics and years of real practice in the financial markets. He has written a library of over 48 educational books on Forex, Smart Money Concepts, the ICT method, scalping, price action, Wyckoff and trading psychology." },
+      { q: "What do his trading books cover?", a: "Forex, Smart Money Concepts (SMC), the ICT method, scalping, price action, chart patterns, Japanese candlesticks, Wyckoff, risk management, technical indicators and trading psychology, always with a practical approach and real chart examples." },
+      { q: "Are the books suitable for beginners?", a: "Yes. The library includes introductory titles such as \"Introducción al Trading\" or \"Trading para Novatos\", as well as more advanced works on Smart Money and the ICT method for experienced traders." },
+      { q: "In which languages are Luis Risueño Gómez's books available?", a: "In Spanish, English, French, German and Italian. Each edition is purchased on the Amazon store for that language." },
+      { q: "Where can I buy Luis Risueño Gómez's books?", a: "All his books are available in ebook and paperback format on Amazon (amazon.es, amazon.com, amazon.fr, amazon.de and amazon.it). This website links directly to each edition." },
+      { q: "Do the books guarantee trading profits?", a: "No. This is educational content only. Trading in financial markets involves risk, and no book can guarantee results or replace professional financial advice." }
+    ]
   },
   fr: {
     brand: "Luis Risueño Gómez",
@@ -154,7 +174,17 @@ const I18N = {
     contact_text: "Des questions, collaborations ou avis ? Écrivez-moi :",
     email: "academiafx7@gmail.com",
     back_top: "Retour en haut",
-    footer: "© 2026 Luis Risueño Gómez. Tous droits réservés."
+    footer: "© 2026 Luis Risueño Gómez. Tous droits réservés.",
+    faq_title: "Questions fréquentes",
+    faq_sub: "Ce que les lecteurs demandent le plus avant de choisir un livre.",
+    faq: [
+      { q: "Qui est Luis Risueño Gómez ?", a: "C'est un auteur espagnol spécialisé dans le trading, diplômé en sciences économiques et fort de plusieurs années de pratique réelle sur les marchés financiers. Il a écrit une bibliothèque de plus de 48 livres éducatifs sur le Forex, Smart Money Concepts, la méthode ICT, le scalping, l'action du prix, Wyckoff et la psychologie du trading." },
+      { q: "De quoi parlent ses livres de trading ?", a: "Forex, Smart Money Concepts (SMC), méthode ICT, scalping, action du prix, figures chartistes, chandeliers japonais, Wyckoff, gestion du risque, indicateurs techniques et psychologie du trading, toujours avec une approche pratique et des exemples sur des graphiques réels." },
+      { q: "Ces livres conviennent-ils aux débutants ?", a: "Oui. La bibliothèque comprend des titres d'introduction comme « Introducción al Trading » ou « Trading para Novatos », ainsi que des ouvrages plus avancés sur le Smart Money et la méthode ICT pour les traders expérimentés." },
+      { q: "En quelles langues les livres de Luis Risueño Gómez sont-ils disponibles ?", a: "En espagnol, anglais, français, allemand et italien. Chaque édition s'achète sur la boutique Amazon correspondant à cette langue." },
+      { q: "Où puis-je acheter les livres de Luis Risueño Gómez ?", a: "Tous ses livres sont disponibles en ebook et en broché sur Amazon (amazon.es, amazon.com, amazon.fr, amazon.de et amazon.it). Ce site renvoie directement vers chaque édition." },
+      { q: "Ces livres garantissent-ils des gains en trading ?", a: "Non. Il s'agit exclusivement de contenu éducatif. Le trading sur les marchés financiers comporte des risques et aucun livre ne peut garantir de résultats ni remplacer un conseil financier professionnel." }
+    ]
   },
   de: {
     brand: "Luis Risueño Gómez",
@@ -195,7 +225,17 @@ const I18N = {
     contact_text: "Fragen, Kooperationen oder Rezensionen? Schreiben Sie mir:",
     email: "academiafx7@gmail.com",
     back_top: "Nach oben",
-    footer: "© 2026 Luis Risueño Gómez. Alle Rechte vorbehalten."
+    footer: "© 2026 Luis Risueño Gómez. Alle Rechte vorbehalten.",
+    faq_title: "Häufig gestellte Fragen",
+    faq_sub: "Was Leser am häufigsten fragen, bevor sie ein Buch auswählen.",
+    faq: [
+      { q: "Wer ist Luis Risueño Gómez?", a: "Er ist ein spanischer Autor, spezialisiert auf Trading, mit einem Abschluss in Wirtschaftswissenschaften und jahrelanger echter Praxis an den Finanzmärkten. Er hat eine Bibliothek von über 48 pädagogischen Büchern über Forex, Smart Money Concepts, die ICT-Methode, Scalping, Price Action, Wyckoff und Trading-Psychologie verfasst." },
+      { q: "Worum geht es in seinen Trading-Büchern?", a: "Forex, Smart Money Concepts (SMC), die ICT-Methode, Scalping, Price Action, Chartmuster, japanische Kerzen, Wyckoff, Risikomanagement, technische Indikatoren und Trading-Psychologie, stets mit einem praktischen Ansatz und Beispielen anhand echter Charts." },
+      { q: "Sind die Bücher für Anfänger geeignet?", a: "Ja. Die Bibliothek umfasst einführende Titel wie „Introducción al Trading“ oder „Trading para Novatos“ sowie fortgeschrittenere Werke über Smart Money und die ICT-Methode für erfahrene Trader." },
+      { q: "In welchen Sprachen sind die Bücher von Luis Risueño Gómez erhältlich?", a: "Auf Spanisch, Englisch, Französisch, Deutsch und Italienisch. Jede Ausgabe wird im Amazon-Shop der jeweiligen Sprache gekauft." },
+      { q: "Wo kann ich die Bücher von Luis Risueño Gómez kaufen?", a: "Alle seine Bücher sind als E-Book und Taschenbuch bei Amazon erhältlich (amazon.es, amazon.com, amazon.fr, amazon.de und amazon.it). Diese Website verlinkt direkt zu jeder Ausgabe." },
+      { q: "Garantieren die Bücher Gewinne im Trading?", a: "Nein. Es handelt sich ausschließlich um Bildungsinhalte. Der Handel an den Finanzmärkten birgt Risiken, und kein Buch kann Ergebnisse garantieren oder eine professionelle Finanzberatung ersetzen." }
+    ]
   },
   it: {
     brand: "Luis Risueño Gómez",
@@ -236,6 +276,16 @@ const I18N = {
     contact_text: "Domande, collaborazioni o recensioni? Scrivimi:",
     email: "academiafx7@gmail.com",
     back_top: "Torna su",
-    footer: "© 2026 Luis Risueño Gómez. Tutti i diritti riservati."
+    footer: "© 2026 Luis Risueño Gómez. Tutti i diritti riservati.",
+    faq_title: "Domande frequenti",
+    faq_sub: "Ciò che i lettori chiedono più spesso prima di scegliere un libro.",
+    faq: [
+      { q: "Chi è Luis Risueño Gómez?", a: "È un autore spagnolo specializzato in trading, laureato in Scienze Economiche e con anni di pratica reale sui mercati finanziari. Ha scritto una biblioteca di oltre 48 libri educativi su Forex, Smart Money Concepts, il metodo ICT, scalping, price action, Wyckoff e psicologia del trading." },
+      { q: "Di cosa trattano i suoi libri di trading?", a: "Forex, Smart Money Concepts (SMC), metodo ICT, scalping, price action, pattern chartisti, candele giapponesi, Wyckoff, gestione del rischio, indicatori tecnici e psicologia del trading, sempre con un approccio pratico ed esempi su grafici reali." },
+      { q: "Sono libri adatti ai principianti?", a: "Sì. La biblioteca include titoli introduttivi come \"Introducción al Trading\" o \"Trading para Novatos\", oltre a opere più avanzate su Smart Money e il metodo ICT per chi ha già esperienza." },
+      { q: "In quali lingue sono disponibili i libri di Luis Risueño Gómez?", a: "In spagnolo, inglese, francese, tedesco e italiano. Ogni edizione si acquista nello store Amazon corrispondente a quella lingua." },
+      { q: "Dove posso comprare i libri di Luis Risueño Gómez?", a: "Tutti i suoi libri sono disponibili in formato ebook e cartaceo su Amazon (amazon.es, amazon.com, amazon.fr, amazon.de e amazon.it). Questo sito rimanda direttamente a ogni edizione." },
+      { q: "I libri garantiscono guadagni nel trading?", a: "No. Si tratta esclusivamente di contenuto educativo. Operare sui mercati finanziari comporta rischi e nessun libro può garantire risultati né sostituire una consulenza finanziaria professionale." }
+    ]
   }
 };

@@ -112,6 +112,12 @@ function bookCard(book) {
 function viewHome() {
   const featured = BOOKS.filter(book => book.destacado);
   const catCount = Object.keys(CATS).length;
+  const faqItems = (I18N[state.lang] && I18N[state.lang].faq) || I18N.es.faq;
+  const faqHtml = faqItems.map((item, i) => `
+    <details class="faq-item reveal"${i === 0 ? " open" : ""}>
+      <summary>${esc(item.q)}</summary>
+      <p>${esc(item.a)}</p>
+    </details>`).join("");
   return `<section class="hero" id="home">
     <div class="container">
       <p class="kicker">${esc(t("hero_kicker"))}</p>
@@ -133,6 +139,11 @@ function viewHome() {
     <p class="section-sub">${esc(t("featured_sub"))}</p>
     <div class="grid">${featured.map(bookCard).join("")}</div>
     <div class="center"><a class="btn ghost" href="#books">${esc(t("view_all"))} →</a></div>
+  </div></section>
+  <section id="faq"><div class="container">
+    <h2 class="section-title">${esc(t("faq_title"))}</h2>
+    <p class="section-sub">${esc(t("faq_sub"))}</p>
+    <div class="faq-list">${faqHtml}</div>
   </div></section>`;
 }
 
@@ -284,6 +295,26 @@ function injectStructuredData() {
   script.type = "application/ld+json";
   script.textContent = JSON.stringify(data);
   document.head.appendChild(script);
+
+  const oldFaq = document.getElementById("faq-schema");
+  if (oldFaq) oldFaq.remove();
+  if (state.route === "home" || state.route === "featured") {
+    const faqItems = (I18N[state.lang] && I18N[state.lang].faq) || I18N.es.faq;
+    const faqData = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map(item => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a }
+      }))
+    };
+    const faqScript = document.createElement("script");
+    faqScript.id = "faq-schema";
+    faqScript.type = "application/ld+json";
+    faqScript.textContent = JSON.stringify(faqData);
+    document.head.appendChild(faqScript);
+  }
 }
 
 /* ---------- Router ---------- */
