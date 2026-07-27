@@ -134,6 +134,15 @@ function viewHome() {
       </div>
     </div>
   </section>
+  <section id="notice"><div class="container">
+    <div class="notice-box reveal">
+      <span class="notice-icon">🎁</span>
+      <div>
+        <p>${esc(t("notice_p1"))}</p>
+        <p>${esc(t("notice_p2"))}</p>
+      </div>
+    </div>
+  </div></section>
   <section id="featured"><div class="container">
     <h2 class="section-title">${esc(t("featured"))}</h2>
     <p class="section-sub">${esc(t("featured_sub"))}</p>
