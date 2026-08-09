@@ -35,7 +35,7 @@ const CATS = {
 const I18N = {
   es: {
     brand: "Luis Risueño Gómez",
-    nav_home: "Inicio", nav_books: "Libros", nav_author: "El autor", nav_contact: "Contacto",
+    nav_home: "Inicio", nav_books: "Libros", nav_glossary: "Glosario", nav_author: "El autor", nav_contact: "Contacto",
     hero_kicker: "Smart Money · ICT · Forex · Price Action",
     hero_title: "Biblioteca de Trading",
     hero_sub: "Una biblioteca completa sobre Forex, Smart Money, ICT, scalping, acción del precio y psicología del trading — con ediciones en cinco idiomas.",
@@ -62,6 +62,11 @@ const I18N = {
     view_on: "Ver en",
     other_stores: "También en:",
     edition_in: "Edición en",
+    glossary_title: "Glosario de trading",
+    glossary_sub: "La mayoría de los términos de trading se usan en inglés en todo el mundo. Aquí tienes su significado explicado en los cinco idiomas de esta web.",
+    glossary_search_placeholder: "Buscar un término…",
+    glossary_related: "Relacionado con:",
+    glossary_no_results: "No hay términos que coincidan con la búsqueda.",
     about_title: "Sobre el autor",
     about_paras: [
       "Luis Risueño Gómez estudió Ciencias Económicas en la Universidad Complutense de Madrid y ha dedicado años a formarse en los mercados financieros: cursos especializados, una extensa biblioteca y, sobre todo, miles de horas de práctica real delante de los gráficos.",
@@ -88,7 +93,7 @@ const I18N = {
   },
   en: {
     brand: "Luis Risueño Gómez",
-    nav_home: "Home", nav_books: "Books", nav_author: "Author", nav_contact: "Contact",
+    nav_home: "Home", nav_books: "Books", nav_glossary: "Glossary", nav_author: "Author", nav_contact: "Contact",
     hero_kicker: "Smart Money · ICT · Forex · Price Action",
     hero_title: "Trading Library",
     hero_sub: "A complete library on Forex, Smart Money, ICT, scalping, price action and trading psychology — with editions in five languages.",
@@ -115,6 +120,11 @@ const I18N = {
     view_on: "View on",
     other_stores: "Also on:",
     edition_in: "Edition in",
+    glossary_title: "Trading glossary",
+    glossary_sub: "Most trading terms are used in English worldwide. Here's what they mean, explained in all five languages of this site.",
+    glossary_search_placeholder: "Search a term…",
+    glossary_related: "Related to:",
+    glossary_no_results: "No terms match your search.",
     about_title: "About the author",
     about_paras: [
       "Luis Risueño Gómez studied Economics at the Complutense University of Madrid and has spent years training in the financial markets: specialised courses, an extensive library and, above all, thousands of hours of real practice in front of the charts.",
@@ -141,7 +151,7 @@ const I18N = {
   },
   fr: {
     brand: "Luis Risueño Gómez",
-    nav_home: "Accueil", nav_books: "Livres", nav_author: "L'auteur", nav_contact: "Contact",
+    nav_home: "Accueil", nav_books: "Livres", nav_glossary: "Glossaire", nav_author: "L'auteur", nav_contact: "Contact",
     hero_kicker: "Smart Money · ICT · Forex · Price Action",
     hero_title: "Bibliothèque de Trading",
     hero_sub: "Une bibliothèque complète sur le Forex, Smart Money, ICT, le scalping, l'action du prix et la psychologie du trading — avec des éditions en cinq langues.",
@@ -168,6 +178,11 @@ const I18N = {
     view_on: "Voir sur",
     other_stores: "Aussi sur :",
     edition_in: "Édition en",
+    glossary_title: "Glossaire du trading",
+    glossary_sub: "La plupart des termes de trading sont utilisés en anglais dans le monde entier. Voici leur signification expliquée dans les cinq langues de ce site.",
+    glossary_search_placeholder: "Rechercher un terme…",
+    glossary_related: "En rapport avec :",
+    glossary_no_results: "Aucun terme ne correspond à votre recherche.",
     about_title: "À propos de l'auteur",
     about_paras: [
       "Luis Risueño Gómez a étudié les sciences économiques à l'Université Complutense de Madrid et a consacré des années à se former aux marchés financiers : cours spécialisés, une vaste bibliothèque et, surtout, des milliers d'heures de pratique réelle devant les graphiques.",
@@ -194,7 +209,7 @@ const I18N = {
   },
   de: {
     brand: "Luis Risueño Gómez",
-    nav_home: "Start", nav_books: "Bücher", nav_author: "Autor", nav_contact: "Kontakt",
+    nav_home: "Start", nav_books: "Bücher", nav_glossary: "Glossar", nav_author: "Autor", nav_contact: "Kontakt",
     hero_kicker: "Smart Money · ICT · Forex · Price Action",
     hero_title: "Trading-Bibliothek",
     hero_sub: "Eine komplette Bibliothek über Forex, Smart Money, ICT, Scalping, Price Action und Trading-Psychologie — mit Ausgaben in fünf Sprachen.",
@@ -221,6 +236,11 @@ const I18N = {
     view_on: "Ansehen auf",
     other_stores: "Auch auf:",
     edition_in: "Ausgabe auf",
+    glossary_title: "Trading-Glossar",
+    glossary_sub: "Die meisten Trading-Begriffe werden weltweit auf Englisch verwendet. Hier finden Sie ihre Bedeutung, erklärt in allen fünf Sprachen dieser Website.",
+    glossary_search_placeholder: "Begriff suchen…",
+    glossary_related: "Verwandt mit:",
+    glossary_no_results: "Keine Begriffe entsprechen Ihrer Suche.",
     about_title: "Über den Autor",
     about_paras: [
       "Luis Risueño Gómez studierte Wirtschaftswissenschaften an der Universität Complutense Madrid und hat Jahre in seine Ausbildung an den Finanzmärkten investiert: Fachkurse, eine umfangreiche Bibliothek und vor allem Tausende Stunden echter Praxis vor den Charts.",
@@ -247,7 +267,7 @@ const I18N = {
   },
   it: {
     brand: "Luis Risueño Gómez",
-    nav_home: "Home", nav_books: "Libri", nav_author: "Autore", nav_contact: "Contatto",
+    nav_home: "Home", nav_books: "Libri", nav_glossary: "Glossario", nav_author: "Autore", nav_contact: "Contatto",
     hero_kicker: "Smart Money · ICT · Forex · Price Action",
     hero_title: "Libreria di Trading",
     hero_sub: "Una libreria completa su Forex, Smart Money, ICT, scalping, price action e psicologia del trading — con edizioni in cinque lingue.",
@@ -274,6 +294,11 @@ const I18N = {
     view_on: "Vedi su",
     other_stores: "Anche su:",
     edition_in: "Edizione in",
+    glossary_title: "Glossario del trading",
+    glossary_sub: "La maggior parte dei termini di trading si usa in inglese in tutto il mondo. Ecco il loro significato spiegato nelle cinque lingue di questo sito.",
+    glossary_search_placeholder: "Cerca un termine…",
+    glossary_related: "Collegato a:",
+    glossary_no_results: "Nessun termine corrisponde alla tua ricerca.",
     about_title: "L'autore",
     about_paras: [
       "Luis Risueño Gómez ha studiato Scienze Economiche all'Università Complutense di Madrid e ha dedicato anni alla formazione sui mercati finanziari: corsi specializzati, un'ampia biblioteca e, soprattutto, migliaia di ore di pratica reale davanti ai grafici.",

@@ -11,6 +11,7 @@
 
 ## Páginas
 - Catálogo completo con buscador y filtros: https://traderbooks.net/#books
+- Glosario de trading en 5 idiomas (más de 50 términos: order block, take profit, FVG, BOS, CHOCH, scalping, Wyckoff...): https://traderbooks.net/#glossary
 - Biografía del autor: https://traderbooks.net/#author
 - Contacto: https://traderbooks.net/#contact
 

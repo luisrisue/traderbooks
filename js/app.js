@@ -205,6 +205,67 @@ function viewBooks() {
   </div></section>`;
 }
 
+/* ---------- Glosario ---------- */
+
+let glossaryQuery = "";
+
+function filteredGlossary() {
+  const q = glossaryQuery.trim().toLowerCase();
+  const list = [...GLOSSARY].sort((a, b) => a.term.localeCompare(b.term));
+  if (!q) return list;
+  return list.filter(item =>
+    item.term.toLowerCase().includes(q) || L(item.def).toLowerCase().includes(q)
+  );
+}
+
+function glossaryListHtml() {
+  const list = filteredGlossary();
+  if (!list.length) {
+    return `<p class="empty-inline">${esc(t("glossary_no_results"))}</p>`;
+  }
+  return list.map(item => `
+    <div class="glossary-item reveal">
+      <h3>${esc(item.term)}</h3>
+      <p>${esc(L(item.def))}</p>
+      <a class="glossary-tag" href="#books" data-cat="${esc(item.cat)}">${esc(t("glossary_related"))} ${esc(L(CATS[item.cat]) || item.cat)} →</a>
+    </div>`).join("");
+}
+
+function refreshGlossaryList() {
+  const list = document.getElementById("glossaryList");
+  if (!list) return;
+  list.innerHTML = glossaryListHtml();
+  bindGlossaryTags();
+}
+
+function bindGlossaryTags() {
+  document.querySelectorAll(".glossary-tag").forEach(tag => {
+    tag.onclick = () => { state.filter = tag.dataset.cat; };
+  });
+}
+
+function viewGlossary() {
+  return `<section id="glossary"><div class="container">
+    <h2 class="section-title">${esc(t("glossary_title"))}</h2>
+    <p class="section-sub">${esc(t("glossary_sub"))}</p>
+    <div class="toolbar">
+      <input type="search" id="glossarySearch" placeholder="${esc(t("glossary_search_placeholder"))}" value="${esc(glossaryQuery)}" aria-label="${esc(t("glossary_search_placeholder"))}">
+    </div>
+    <div class="glossary-list" id="glossaryList">${glossaryListHtml()}</div>
+  </div></section>`;
+}
+
+function bindGlossaryToolbar() {
+  const search = document.getElementById("glossarySearch");
+  if (search) {
+    search.oninput = () => {
+      glossaryQuery = search.value;
+      refreshGlossaryList();
+    };
+  }
+  bindGlossaryTags();
+}
+
 function viewAuthor() {
   const paras = ((I18N[state.lang] && I18N[state.lang].about_paras) || I18N.es.about_paras)
     .map(p => `<p>${esc(p)}</p>`).join("");
@@ -305,6 +366,28 @@ function injectStructuredData() {
   script.textContent = JSON.stringify(data);
   document.head.appendChild(script);
 
+  const oldGlossary = document.getElementById("glossary-schema");
+  if (oldGlossary) oldGlossary.remove();
+  if (state.route === "glossary") {
+    const glossaryData = {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      name: t("glossary_title"),
+      description: t("glossary_sub"),
+      inDefinedTermSet: "https://traderbooks.net/#glossary",
+      hasDefinedTerm: GLOSSARY.map(item => ({
+        "@type": "DefinedTerm",
+        name: item.term,
+        description: L(item.def)
+      }))
+    };
+    const glossaryScript = document.createElement("script");
+    glossaryScript.id = "glossary-schema";
+    glossaryScript.type = "application/ld+json";
+    glossaryScript.textContent = JSON.stringify(glossaryData);
+    document.head.appendChild(glossaryScript);
+  }
+
   const oldFaq = document.getElementById("faq-schema");
   if (oldFaq) oldFaq.remove();
   if (state.route === "home" || state.route === "featured") {
@@ -330,11 +413,12 @@ function injectStructuredData() {
 
 function router() {
   const hash = (location.hash || "#home").replace("#", "");
-  state.route = ["home", "books", "author", "contact", "featured"].includes(hash) ? hash : "home";
+  state.route = ["home", "books", "glossary", "author", "contact", "featured"].includes(hash) ? hash : "home";
   const routeView = state.route === "featured" ? "home" : state.route;
   const view = document.getElementById("view");
   view.innerHTML = routeView === "home" ? viewHome()
     : routeView === "books" ? viewBooks()
+    : routeView === "glossary" ? viewGlossary()
     : routeView === "author" ? viewAuthor()
     : viewContact();
   document.querySelectorAll(".main-nav a").forEach(link => {
@@ -343,6 +427,7 @@ function router() {
   const nav = document.getElementById("mainNav");
   if (nav) nav.classList.remove("open");
   if (routeView === "books") bindBooksToolbar();
+  if (routeView === "glossary") bindGlossaryToolbar();
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
