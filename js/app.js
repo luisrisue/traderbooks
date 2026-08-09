@@ -109,8 +109,16 @@ function bookCard(book) {
 
 /* ---------- Vistas ---------- */
 
+function featuredForLang(lang) {
+  const inLang = BOOKS.filter(book => book.lang === lang);
+  const destacados = inLang.filter(book => book.destacado);
+  if (destacados.length >= 4) return destacados;
+  const resto = inLang.filter(book => !book.destacado);
+  return [...destacados, ...resto].slice(0, 6);
+}
+
 function viewHome() {
-  const featured = BOOKS.filter(book => book.destacado);
+  const featured = featuredForLang(state.lang);
   const catCount = Object.keys(CATS).length;
   const faqItems = (I18N[state.lang] && I18N[state.lang].faq) || I18N.es.faq;
   const faqHtml = faqItems.map((item, i) => `
