@@ -77,9 +77,9 @@ function bookCard(book) {
     return `<span class="chip">${esc(name)}</span>`;
   }).join("");
 
-  // Tienda principal: la del idioma de la interfaz. Resto como banderas pequenyas.
-  const mainStore = storeFor(state.lang);
-  const others = STORES.filter(s => s.lang !== state.lang).map(store =>
+  // Tienda principal: la del idioma real de esta edicion del libro (no la interfaz). Resto como banderas pequenyas.
+  const mainStore = storeFor(book.lang);
+  const others = STORES.filter(s => s.lang !== book.lang).map(store =>
     `<a class="store-flag" href="${amazonUrl(book, store)}" target="_blank" rel="noopener noreferrer sponsored" title="Amazon ${esc(L(store.label))}" aria-label="Amazon ${esc(L(store.label))}">${store.code}</a>`
   ).join("");
 
