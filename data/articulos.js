@@ -60,7 +60,6 @@ const ARTICULO_1 = {
     }},
     {tipo:"h3", t:{es:"El recorrido básico: del mercado a una operación demo", en:"The basic path: from the market to a demo trade", fr:"Le parcours de base : du marché à une position démo", de:"Der Grundweg: vom Markt zum Demo-Trade", it:"Il percorso di base: dal mercato a un'operazione demo"}},
     {tipo:"p", t:{es:"De forma simplificada, el proceso es este:", en:"In simplified terms, the process looks like this:", fr:"En résumé, le processus est le suivant :", de:"Vereinfacht gesagt, sieht der Ablauf so aus:", it:"In modo semplificato, il processo è questo:"}},
-    {tipo:"imagen", src:"img/articulos/recorrido-basico.jpg", alt:{es:"Recorrido: mercado, bróker, plataforma, operación demo", en:"Path: market, broker, platform, demo trade", fr:"Parcours : marché, courtier, plateforme, trade démo", de:"Weg: Markt, Broker, Plattform, Demo-Trade", it:"Percorso: mercato, broker, piattaforma, operazione demo"}},
     {tipo:"lista", items:[
       {es:"Eliges un mercado que quieres estudiar.", en:"You choose a market you want to study.", fr:"Vous choisissez un marché que vous voulez étudier.", de:"Sie wählen einen Markt, den Sie studieren möchten.", it:"Scegli un mercato che vuoi studiare."},
       {es:"Utilizas un bróker para acceder a ese mercado.", en:"You use a broker to access that market.", fr:"Vous utilisez un courtier pour accéder à ce marché.", de:"Sie nutzen einen Broker, um Zugang zu diesem Markt zu erhalten.", it:"Utilizzi un broker per accedere a quel mercato."},
@@ -746,7 +745,13 @@ const ARTICULO_3 = {
       de:"Viele Trader erwarten, dass der Kurs bei einem Ausbruch über den Widerstand weiter steigt. Deshalb platzieren sie Kauforders knapp über diesem Niveau. Gleichzeitig setzen Personen, die short waren, ihre Stop-Loss meist in derselben Zone. Überschreitet der Kurs das Hoch, kann er viele Orders gleichzeitig auslösen. Gelingt es ihm jedoch nicht, darüber zu bleiben, und kehrt er schnell in die Spanne zurück, könnte der Ausbruch falsch gewesen sein.",
       it:"Molti trader si aspettano che, se la resistenza si rompe, il prezzo continui a salire. Per questo posizionano ordini di acquisto appena sopra quel livello. Allo stesso tempo, chi era short di solito posiziona lo stop loss in quella stessa zona. Quando il prezzo supera il massimo, può attivare molti ordini contemporaneamente. Tuttavia, se non riesce a mantenersi sopra e torna rapidamente nel range, il breakout potrebbe essere stato falso.",
     }},
-    {tipo:"imagen", src:"img/articulos/falsas-rupturas-intro.jpg", alt:{es:"Ilustración sobre falsas rupturas en trading", en:"Illustration about false breakouts in trading", fr:"Illustration sur les fausses cassures en trading", de:"Illustration zu Fehlausbrüchen im Trading", it:"Illustrazione sui falsi breakout nel trading"}},
+    {tipo:"imagen", src:"img/articulos/rango-soporte-resistencia.svg", alt:{es:"Precio moviéndose entre una resistencia y un soporte", en:"Price moving between a resistance and a support", fr:"Prix évoluant entre une résistance et un support", de:"Kurs bewegt sich zwischen Widerstand und Unterstützung", it:"Prezzo che si muove tra una resistenza e un supporto"}, leyenda:{
+      es:"El precio rebota repetidamente entre la resistencia (arriba) y el soporte (abajo) hasta que rompe uno de los dos niveles.",
+      en:"Price repeatedly bounces between the resistance (top) and the support (bottom) until it breaks one of the two levels.",
+      fr:"Le prix rebondit à plusieurs reprises entre la résistance (en haut) et le support (en bas) jusqu'à casser l'un des deux niveaux.",
+      de:"Der Kurs prallt wiederholt zwischen dem Widerstand (oben) und der Unterstützung (unten) ab, bis er eines der beiden Niveaus durchbricht.",
+      it:"Il prezzo rimbalza ripetutamente tra la resistenza (in alto) e il supporto (in basso) finché non rompe uno dei due livelli.",
+    }},
     {tipo:"h3", t:{es:"El problema de entrar demasiado pronto", en:"The problem with entering too early", fr:"Le problème d'entrer trop tôt", de:"Das Problem des zu frühen Einstiegs", it:"Il problema di entrare troppo presto"}},
     {tipo:"p", t:{
       es:"El error habitual no es mirar una ruptura. El error es asumir que toda ruptura debe continuar. Cuando aparece una vela grande atravesando un nivel, es normal sentir miedo a quedarse fuera del movimiento. Esa sensación lleva a muchos traders a entrar en el momento de mayor euforia, sin esperar confirmación. En ese instante suelen ocurrir tres cosas:",
@@ -984,7 +989,13 @@ const ARTICULO_4 = {
       {es:"Qué tamaño de posición debo utilizar.", en:"What position size I should use.", fr:"Quelle taille de position je dois utiliser.", de:"Welche Positionsgröße ich verwenden sollte.", it:"Quale dimensione della posizione dovrei usare."},
       {es:"Si el posible beneficio compensa el riesgo asumido.", en:"Whether the potential profit compensates for the risk taken.", fr:"Si le bénéfice potentiel compense le risque pris.", de:"Ob der mögliche Gewinn das eingegangene Risiko ausgleicht.", it:"Se il possibile profitto compensa il rischio assunto."},
     ]},
-    {tipo:"imagen", src:"img/articulos/riesgo-intro.jpg", alt:{es:"Ilustración sobre gestión del riesgo en trading", en:"Illustration about risk management in trading", fr:"Illustration sur la gestion du risque en trading", de:"Illustration zum Risikomanagement im Trading", it:"Illustrazione sulla gestione del rischio nel trading"}},
+    {tipo:"imagen", src:"img/articulos/supervivencia-capital.svg", alt:{es:"Comparación entre una curva de capital descontrolada y una controlada", en:"Comparison between an uncontrolled and a controlled equity curve", fr:"Comparaison entre une courbe de capital incontrôlée et une courbe maîtrisée", de:"Vergleich zwischen einer unkontrollierten und einer kontrollierten Kapitalkurve", it:"Confronto tra una curva di capitale incontrollata e una controllata"}, leyenda:{
+      es:"Arriesgar demasiado por operación (rojo) puede acabar con la cuenta en poco tiempo. Un riesgo controlado (verde) permite seguir operando a largo plazo.",
+      en:"Risking too much per trade (red) can wipe out the account quickly. Controlled risk (green) allows you to keep trading over the long term.",
+      fr:"Risquer trop par position (rouge) peut ruiner le compte rapidement. Un risque maîtrisé (vert) permet de continuer à trader sur le long terme.",
+      de:"Zu hohes Risiko pro Trade (rot) kann das Konto schnell zerstören. Kontrolliertes Risiko (grün) ermöglicht langfristiges Trading.",
+      it:"Rischiare troppo per operazione (rosso) può azzerare il conto rapidamente. Un rischio controllato (verde) permette di continuare a fare trading nel lungo periodo.",
+    }},
     {tipo:"h3", t:{es:"El tamaño de posición importa más de lo que parece", en:"Position size matters more than it seems", fr:"La taille de position compte plus qu'il n'y paraît", de:"Die Positionsgröße ist wichtiger, als es scheint", it:"La dimensione della posizione conta più di quanto sembri"}},
     {tipo:"p", t:{
       es:"Una misma operación puede ser razonable o extremadamente arriesgada dependiendo del tamaño de posición. Por ejemplo, dos personas pueden comprar el mismo activo en el mismo punto y usar el mismo stop loss. Pero si una utiliza un tamaño de posición mucho mayor, su pérdida potencial será muy distinta. Por eso, antes de abrir una operación, hay que definir tres elementos:",

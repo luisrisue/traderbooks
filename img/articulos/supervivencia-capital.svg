@@ -1,0 +1,21 @@
+<svg viewBox="0 0 740 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="740" height="280" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="738" height="278" rx="19" fill="none" stroke="#26315a"/>
+  
+<line x1="60" y1="240" x2="680" y2="240" stroke="#26315a" stroke-width="2"/>
+<polyline points="60,150 120,120 180,160 240,100 300,190 340,260" fill="none" stroke="#ef5b5b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M320,250 l20,10 M340,260 l20,-10" stroke="#ef5b5b" stroke-width="4" stroke-linecap="round"/>
+<polyline points="60,150 130,140 200,155 270,135 340,148 410,120 480,135 550,105 620,115 680,85" fill="none" stroke="#37d39b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="680" cy="85" r="8" fill="#37d39b"/>
+
+</svg>

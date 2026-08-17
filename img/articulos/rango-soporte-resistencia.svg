@@ -1,0 +1,25 @@
+<svg viewBox="0 0 740 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="740" height="280" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="738" height="278" rx="19" fill="none" stroke="#26315a"/>
+  
+<line x1="60" y1="80" x2="680" y2="80" stroke="#ef5b5b" stroke-width="3" stroke-dasharray="8 6"/>
+<line x1="60" y1="220" x2="680" y2="220" stroke="#37d39b" stroke-width="3" stroke-dasharray="8 6"/>
+<polyline points="60,150 110,95 160,140 210,205 260,150 310,90 360,145 410,210 460,140 510,95 560,150 610,200 660,120" fill="none" stroke="#ffd479" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110" cy="95" r="7" fill="#ef5b5b"/>
+<circle cx="310" cy="90" r="7" fill="#ef5b5b"/>
+<circle cx="510" cy="95" r="7" fill="#ef5b5b"/>
+<circle cx="210" cy="205" r="7" fill="#37d39b"/>
+<circle cx="410" cy="210" r="7" fill="#37d39b"/>
+<circle cx="610" cy="200" r="7" fill="#37d39b"/>
+
+</svg>
