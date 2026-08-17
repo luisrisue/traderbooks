@@ -274,6 +274,75 @@ function bindGlossaryToolbar() {
   bindGlossaryTags();
 }
 
+/* ---------- Articulos ---------- */
+
+function renderArticleBlock(b) {
+  switch (b.tipo) {
+    case "h3": return `<h3>${esc(L(b.t))}</h3>`;
+    case "h4": return `<h4>${esc(L(b.t))}</h4>`;
+    case "p": return `<p>${esc(L(b.t))}</p>`;
+    case "lista": return `<ul>${b.items.map(item => `<li>${esc(L(item))}</li>`).join("")}</ul>`;
+    case "imagen": return `<figure class="article-figure reveal">
+        <img src="${esc(b.src)}" alt="${esc(L(b.alt))}" loading="lazy">
+        ${b.leyenda ? `<figcaption>${esc(L(b.leyenda))}</figcaption>` : ""}
+      </figure>`;
+    default: return "";
+  }
+}
+
+function estimateReadMinutes(article) {
+  let words = 0;
+  article.bloques.forEach(b => {
+    if (b.t) words += L(b.t).trim().split(/\s+/).length;
+    if (b.items) words += b.items.reduce((sum, item) => sum + L(item).trim().split(/\s+/).length, 0);
+  });
+  return Math.max(3, Math.round(words / 200));
+}
+
+function articleFullHtml(article, index) {
+  const readMin = estimateReadMinutes(article);
+  return `<article class="article-full reveal" id="${esc(article.id)}">
+    <div class="article-header">
+      <span class="article-num">${String(index + 1).padStart(2, "0")}</span>
+      <h2>${esc(L(article.titulo))}</h2>
+      <p class="article-meta">${readMin} ${esc(t("articles_read_time"))}</p>
+    </div>
+    ${article.imagenPortada ? `<div class="article-cover"><img src="${esc(article.imagenPortada)}" alt="${esc(L(article.titulo))}" loading="lazy"></div>` : ""}
+    <div class="article-body">
+      ${article.bloques.map(renderArticleBlock).join("")}
+      <p class="disclaimer-box">${esc(L(article.aviso))}</p>
+    </div>
+    <a class="back-index-link" href="#articles" data-scroll-to="articlesIndex">↑ ${esc(t("articles_back_index"))}</a>
+  </article>`;
+}
+
+function viewArticles() {
+  const items = ARTICULOS.map(a =>
+    `<li><a href="#articles" data-scroll-to="${esc(a.id)}">${esc(L(a.titulo))}</a></li>`
+  ).join("");
+  return `<section id="articles"><div class="container">
+    <h2 class="section-title">${esc(t("articles_title"))}</h2>
+    <p class="section-sub">${esc(t("articles_sub"))}</p>
+    <nav class="articles-index reveal" id="articlesIndex" aria-label="${esc(t("articles_index_title"))}">
+      <h3>${esc(t("articles_index_title"))}</h3>
+      <ol>${items}</ol>
+    </nav>
+    <div class="articles-list">
+      ${ARTICULOS.map((a, i) => articleFullHtml(a, i)).join("")}
+    </div>
+  </div></section>`;
+}
+
+function bindArticlesToolbar() {
+  document.querySelectorAll("[data-scroll-to]").forEach(link => {
+    link.onclick = (ev) => {
+      ev.preventDefault();
+      const target = document.getElementById(link.dataset.scrollTo);
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+  });
+}
+
 function viewAuthor() {
   const paras = ((I18N[state.lang] && I18N[state.lang].about_paras) || I18N.es.about_paras)
     .map(p => `<p>${esc(p)}</p>`).join("");
@@ -396,6 +465,32 @@ function injectStructuredData() {
     document.head.appendChild(glossaryScript);
   }
 
+  const oldArticles = document.getElementById("articles-schema");
+  if (oldArticles) oldArticles.remove();
+  if (state.route === "articles") {
+    const langNames = { es: "es", en: "en", fr: "fr", de: "de", it: "it" };
+    const articlesData = {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      name: t("articles_title"),
+      description: t("articles_sub"),
+      blogPost: ARTICULOS.map(a => ({
+        "@type": "BlogPosting",
+        "@id": `https://traderbooks.net/#${a.id}`,
+        headline: L(a.titulo),
+        description: L(a.resumen),
+        inLanguage: langNames[state.lang] || "es",
+        image: `https://traderbooks.net/${a.imagenPortada}`,
+        author: { "@type": "Person", name: "Luis Risueño Gómez" }
+      }))
+    };
+    const articlesScript = document.createElement("script");
+    articlesScript.id = "articles-schema";
+    articlesScript.type = "application/ld+json";
+    articlesScript.textContent = JSON.stringify(articlesData);
+    document.head.appendChild(articlesScript);
+  }
+
   const oldFaq = document.getElementById("faq-schema");
   if (oldFaq) oldFaq.remove();
   if (state.route === "home" || state.route === "featured") {
@@ -421,10 +516,11 @@ function injectStructuredData() {
 
 function router() {
   const hash = (location.hash || "#home").replace("#", "");
-  state.route = ["home", "books", "glossary", "author", "contact", "featured"].includes(hash) ? hash : "home";
+  state.route = ["home", "articles", "books", "glossary", "author", "contact", "featured"].includes(hash) ? hash : "home";
   const routeView = state.route === "featured" ? "home" : state.route;
   const view = document.getElementById("view");
   view.innerHTML = routeView === "home" ? viewHome()
+    : routeView === "articles" ? viewArticles()
     : routeView === "books" ? viewBooks()
     : routeView === "glossary" ? viewGlossary()
     : routeView === "author" ? viewAuthor()
@@ -436,6 +532,7 @@ function router() {
   if (nav) nav.classList.remove("open");
   if (routeView === "books") bindBooksToolbar();
   if (routeView === "glossary") bindGlossaryToolbar();
+  if (routeView === "articles") bindArticlesToolbar();
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 

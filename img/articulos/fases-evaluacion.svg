@@ -1,0 +1,27 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="798" height="298" rx="19" fill="none" stroke="#26315a"/>
+  
+    <circle cx="140" cy="110" r="46" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <text x="140" y="119" font-family="Arial" font-size="30" font-weight="800" fill="#ffd479" text-anchor="middle">1</text>
+    <path d="M118,200 h44 v54 h-44 z" fill="none" stroke="#eaeffa" stroke-width="3"/><path d="M126,212 h28 M126,224 h28 M126,236 h18" stroke="#9aa7c7" stroke-width="3" stroke-linecap="round"/>
+    
+    <circle cx="400" cy="110" r="46" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <text x="400" y="119" font-family="Arial" font-size="30" font-weight="800" fill="#ffd479" text-anchor="middle">2</text>
+    <path d="M400,198 l26,10 v26 c0,20 -14,32 -26,38 c-12,-6 -26,-18 -26,-38 v-26 z" fill="none" stroke="#eaeffa" stroke-width="3"/><path d="M390,232 l8,9 l16,-20" stroke="#37d39b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <circle cx="660" cy="110" r="46" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <text x="660" y="119" font-family="Arial" font-size="30" font-weight="800" fill="#ffd479" text-anchor="middle">3</text>
+    <circle cx="660" cy="222" r="20" fill="none" stroke="#eaeffa" stroke-width="3"/><path d="M652,222 l6,7 l11,-14" stroke="#ffd479" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M654,242 l-6,18 h24 l-6,-18" fill="none" stroke="#eaeffa" stroke-width="3"/>
+    <path d="M186,110 H354" stroke="#26315a" stroke-width="4"/><path d="M446,110 H614" stroke="#26315a" stroke-width="4"/><path d="M178,104 l10,6 l-10,6" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M438,104 l10,6 l-10,6" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

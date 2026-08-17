@@ -1,0 +1,15 @@
+<svg viewBox="0 0 910 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="910" height="230" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="908" height="228" rx="19" fill="none" stroke="#26315a"/>
+  <circle cx="110" cy="110" r="44" fill="none" stroke="url(#gold)" stroke-width="3"/><text x="110" y="102" font-family="Arial" font-size="22" font-weight="800" fill="#ffd479" text-anchor="middle">1</text><circle cx="106" cy="124" r="14" fill="none" stroke="#eaeffa" stroke-width="3"/><line x1="116" y1="134" x2="126" y2="144" stroke="#eaeffa" stroke-width="3" stroke-linecap="round"/><path d="M154,110 H296" stroke="#26315a" stroke-width="4"/><path d="M180,104 l10,6 l-10,6" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="340" cy="110" r="44" fill="none" stroke="url(#gold)" stroke-width="3"/><text x="340" y="102" font-family="Arial" font-size="22" font-weight="800" fill="#ffd479" text-anchor="middle">2</text><circle cx="340" cy="128" r="16" fill="none" stroke="#eaeffa" stroke-width="3"/><path d="M340,119 V128 L348,133" stroke="#eaeffa" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M384,110 H526" stroke="#26315a" stroke-width="4"/><path d="M410,104 l10,6 l-10,6" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="570" cy="110" r="44" fill="none" stroke="url(#gold)" stroke-width="3"/><text x="570" y="102" font-family="Arial" font-size="22" font-weight="800" fill="#ffd479" text-anchor="middle">3</text><circle cx="570" cy="128" r="16" fill="none" stroke="#37d39b" stroke-width="3"/><path d="M562,128 l6,7 l11,-14" stroke="#37d39b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M614,110 H756" stroke="#26315a" stroke-width="4"/><path d="M640,104 l10,6 l-10,6" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="800" cy="110" r="44" fill="none" stroke="url(#gold)" stroke-width="3"/><text x="800" y="102" font-family="Arial" font-size="22" font-weight="800" fill="#ffd479" text-anchor="middle">4</text><path d="M786,118 h20 M786,118 v20 M806,118 l10,-8 M806,118 l10,8" stroke="#ffd479" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

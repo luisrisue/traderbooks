@@ -1,0 +1,23 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="300" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="638" height="298" rx="19" fill="none" stroke="#26315a"/>
+  
+<rect x="140" y="180" width="70" height="60" fill="#ef5b5b" rx="6"/>
+<text x="175" y="270" font-family="Arial" font-size="26" font-weight="800" fill="#eaeffa" text-anchor="middle">1</text>
+<rect x="320" y="120" width="70" height="120" fill="#37d39b" rx="6"/>
+<text x="355" y="270" font-family="Arial" font-size="26" font-weight="800" fill="#eaeffa" text-anchor="middle">2</text>
+<path d="M440,180 H520" stroke="#26315a" stroke-width="3"/>
+<text x="480" y="172" font-family="Arial" font-size="20" fill="#9aa7c7" text-anchor="middle">:</text>
+<line x1="80" y1="240" x2="560" y2="240" stroke="#26315a" stroke-width="2"/>
+
+</svg>

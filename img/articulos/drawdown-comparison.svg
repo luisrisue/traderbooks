@@ -1,0 +1,23 @@
+<svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="280" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="798" height="278" rx="19" fill="none" stroke="#26315a"/>
+  
+<text x="200" y="40" font-family="Arial" font-size="22" font-weight="800" fill="#eaeffa" text-anchor="middle">A</text>
+<text x="600" y="40" font-family="Arial" font-size="22" font-weight="800" fill="#eaeffa" text-anchor="middle">B</text>
+<line x1="80" y1="200" x2="340" y2="200" stroke="#ef5b5b" stroke-width="3" stroke-dasharray="6 6"/>
+<polyline points="80,120 130,140 160,110 200,150 240,130 280,170 320,155 340,190" fill="none" stroke="#ffd479" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="460" y1="130" x2="720" y2="230" stroke="#ef5b5b" stroke-width="3" stroke-dasharray="6 6"/>
+<polyline points="460,90 510,105 540,80 580,115 620,100 660,150 690,140 720,190" fill="none" stroke="#ffd479" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="60" y="240" width="680" height="1" fill="#26315a"/>
+
+</svg>
