@@ -305,7 +305,7 @@ function articleFullHtml(article, index) {
     <div class="article-header">
       <span class="article-num">${String(index + 1).padStart(2, "0")}</span>
       <h2>${esc(L(article.titulo))}</h2>
-      <p class="article-meta">${readMin} ${esc(t("articles_read_time"))}</p>
+      <p class="article-meta">${readMin} ${esc(t("articles_read_time"))} · <a class="article-permalink" href="articulos/${esc(article.id)}/">${esc(t("articles_permalink"))}</a></p>
     </div>
     ${article.imagenPortada ? `<div class="article-cover"><img src="${esc(article.imagenPortada)}" alt="${esc(L(article.titulo))}" loading="lazy"></div>` : ""}
     <div class="article-body">

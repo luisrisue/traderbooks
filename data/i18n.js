@@ -72,6 +72,7 @@ const I18N = {
     articles_index_title: "Índice",
     articles_read_time: "min de lectura",
     articles_back_index: "Volver al índice",
+    articles_permalink: "enlace directo",
     articles_share_hint: "Comparte este artículo:",
     about_title: "Sobre el autor",
     about_paras: [
@@ -136,6 +137,7 @@ const I18N = {
     articles_index_title: "Index",
     articles_read_time: "min read",
     articles_back_index: "Back to index",
+    articles_permalink: "direct link",
     articles_share_hint: "Share this article:",
     about_title: "About the author",
     about_paras: [
@@ -200,6 +202,7 @@ const I18N = {
     articles_index_title: "Sommaire",
     articles_read_time: "min de lecture",
     articles_back_index: "Retour au sommaire",
+    articles_permalink: "lien direct",
     articles_share_hint: "Partagez cet article :",
     about_title: "À propos de l'auteur",
     about_paras: [
@@ -264,6 +267,7 @@ const I18N = {
     articles_index_title: "Inhaltsverzeichnis",
     articles_read_time: "Min. Lesezeit",
     articles_back_index: "Zurück zum Inhaltsverzeichnis",
+    articles_permalink: "Direktlink",
     articles_share_hint: "Diesen Artikel teilen:",
     about_title: "Über den Autor",
     about_paras: [
@@ -328,6 +332,7 @@ const I18N = {
     articles_index_title: "Indice",
     articles_read_time: "min di lettura",
     articles_back_index: "Torna all'indice",
+    articles_permalink: "link diretto",
     articles_share_hint: "Condividi questo articolo:",
     about_title: "L'autore",
     about_paras: [
