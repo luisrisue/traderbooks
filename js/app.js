@@ -255,7 +255,7 @@ function bindGlossaryTags() {
 function viewGlossary() {
   return `<section id="glossary"><div class="container">
     <h2 class="section-title">${esc(t("glossary_title"))}</h2>
-    <p class="section-sub">${esc(t("glossary_sub"))}</p>
+    <p class="section-sub">${esc(t("glossary_sub"))} <a class="article-permalink" href="glosario/">${esc(t("articles_permalink"))}</a></p>
     <div class="toolbar">
       <input type="search" id="glossarySearch" placeholder="${esc(t("glossary_search_placeholder"))}" value="${esc(glossaryQuery)}" aria-label="${esc(t("glossary_search_placeholder"))}">
     </div>
