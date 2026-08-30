@@ -94,7 +94,7 @@ function bookCard(book) {
       <span class="lang-badge" title="${esc(t("edition_in"))} ${esc(edition.name)}">${edition.code.toUpperCase()}</span>
     </div>
     <div class="card-body">
-      <h3>${esc(book.titulo)}</h3>
+      <h3><a href="libros/${esc(book.id)}/" class="book-permalink-title">${esc(book.titulo)}</a></h3>
       <p class="description">${esc(book.descripcion)}</p>
       <div class="cat">${categories}</div>
       <div class="stores">

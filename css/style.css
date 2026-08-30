@@ -97,6 +97,8 @@ section{padding:48px 0}
 .lang-badge{position:absolute;z-index:2;top:10px;right:10px;background:rgba(8,13,28,.85);backdrop-filter:blur(6px);border:1px solid var(--line);color:var(--text);font-size:.72rem;font-weight:800;padding:4px 9px;border-radius:999px;letter-spacing:.04em}
 .card-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:11px;flex:1}
 .card h3{font-family:var(--font-display);font-size:1rem;font-weight:700;line-height:1.35}
+.book-permalink-title{color:inherit;text-decoration:none}
+.book-permalink-title:hover{color:var(--accent2);text-decoration:underline}
 .card .description{font-size:.86rem;color:var(--muted);line-height:1.55}
 .card .cat{display:flex;gap:6px;flex-wrap:wrap}
 .chip{font-size:.7rem;background:var(--bg2);border:1px solid var(--line);color:var(--muted);padding:3px 9px;border-radius:999px;font-weight:600}
