@@ -26,6 +26,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://traderbooks.net/articulos/apertura-londres-gbpusd/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://traderbooks.net/glosario/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

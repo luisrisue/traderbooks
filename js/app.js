@@ -286,6 +286,20 @@ function renderArticleBlock(b) {
         <img src="${esc(b.src)}" alt="${esc(L(b.alt))}" loading="lazy">
         ${b.leyenda ? `<figcaption>${esc(L(b.leyenda))}</figcaption>` : ""}
       </figure>`;
+    case "callout": return `<div class="callout-box callout-${esc(b.variant || "info")} reveal">${esc(L(b.t))}</div>`;
+    case "pasos": return `<ol class="steps-list reveal">${b.items.map(item => `<li>${esc(L(item))}</li>`).join("")}</ol>`;
+    case "checklist": return `<div class="checklist-box reveal">
+        ${b.titulo ? `<strong>${esc(L(b.titulo))}</strong>` : ""}
+        <ul>${b.items.map(item => `<li>${esc(L(item))}</li>`).join("")}</ul>
+      </div>`;
+    case "comparacion": return `<div class="comparison-grid reveal">
+        ${[b.izquierda, b.derecha].map(col => `
+          <div class="comparison-card">
+            <span class="comparison-tag">${esc(L(col.tag))}</span>
+            <b>${esc(L(col.titulo))}</b>
+            <p>${esc(L(col.texto))}</p>
+          </div>`).join("")}
+      </div>`;
     default: return "";
   }
 }
@@ -294,7 +308,13 @@ function estimateReadMinutes(article) {
   let words = 0;
   article.bloques.forEach(b => {
     if (b.t) words += L(b.t).trim().split(/\s+/).length;
+    if (b.titulo) words += L(b.titulo).trim().split(/\s+/).length;
     if (b.items) words += b.items.reduce((sum, item) => sum + L(item).trim().split(/\s+/).length, 0);
+    if (b.izquierda && b.derecha) {
+      [b.izquierda, b.derecha].forEach(col => {
+        words += L(col.tag).trim().split(/\s+/).length + L(col.titulo).trim().split(/\s+/).length + L(col.texto).trim().split(/\s+/).length;
+      });
+    }
   });
   return Math.max(3, Math.round(words / 200));
 }
