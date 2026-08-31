@@ -6,7 +6,7 @@
 const ARTICULO_1 = {
   id: "guia-basica-trading",
   categorias: ["forex"],
-  imagenPortada: "img/articulos/recorrido-basico.jpg",
+  imagenPortada: "img/articulos/recorrido-basico.jpg", imagenPortadaW: 1400, imagenPortadaH: 648,
   titulo: {
     es: "Guía básica para empezar a entender el trading: conceptos que debes conocer",
     en: "A Beginner's Guide to Understanding Trading: The Concepts You Need to Know",
@@ -143,7 +143,7 @@ const ARTICULO_1 = {
       de:"Die Oberfläche wirkt vielleicht altmodisch, wird aber von vielen Tradern wegen ihrer Einfachheit und Stabilität geschätzt.",
       it:"La sua interfaccia può sembrare datata, ma resta apprezzata da molti trader per la sua semplicità e stabilità.",
     }},
-    {tipo:"imagen", src:"img/articulos/mt4.jpg", alt:{es:"Plataforma MetaTrader 4", en:"MetaTrader 4 platform", fr:"Plateforme MetaTrader 4", de:"MetaTrader-4-Plattform", it:"Piattaforma MetaTrader 4"}},
+    {tipo:"imagen", src:"img/articulos/mt4.jpg", w:1400, h:628, alt:{es:"Plataforma MetaTrader 4", en:"MetaTrader 4 platform", fr:"Plateforme MetaTrader 4", de:"MetaTrader-4-Plattform", it:"Piattaforma MetaTrader 4"}},
     {tipo:"h4", t:{es:"MetaTrader 5 (MT5)", en:"MetaTrader 5 (MT5)", fr:"MetaTrader 5 (MT5)", de:"MetaTrader 5 (MT5)", it:"MetaTrader 5 (MT5)"}},
     {tipo:"p", t:{
       es:"MetaTrader 5, o MT5, es una versión más moderna y completa. Ofrece más marcos temporales, más herramientas de análisis y una estructura preparada para trabajar con una variedad mayor de mercados, dependiendo del bróker. Aunque sus nombres se parecen, MT4 y MT5 no son exactamente la misma plataforma ni siempre son compatibles entre sí. Antes de elegir una, conviene revisar cuál ofrece el bróker y para qué mercado la necesitas.",
@@ -152,7 +152,7 @@ const ARTICULO_1 = {
       de:"MetaTrader 5, oder MT5, ist eine modernere und umfassendere Version. Sie bietet mehr Zeitrahmen, mehr Analysewerkzeuge und eine Struktur, die je nach Broker für eine größere Bandbreite an Märkten ausgelegt ist. Trotz ähnlicher Namen sind MT4 und MT5 nicht dieselbe Plattform und nicht immer miteinander kompatibel. Bevor Sie sich entscheiden, sollten Sie prüfen, welche Ihr Broker anbietet und für welchen Markt Sie sie benötigen.",
       it:"MetaTrader 5, o MT5, è una versione più moderna e completa. Offre più intervalli temporali, più strumenti di analisi e una struttura predisposta per lavorare con una varietà maggiore di mercati, a seconda del broker. Anche se i nomi si somigliano, MT4 e MT5 non sono esattamente la stessa piattaforma e non sono sempre compatibili tra loro. Prima di sceglierne una, conviene verificare quale offre il tuo broker e per quale mercato ti serve.",
     }},
-    {tipo:"imagen", src:"img/articulos/mt5.jpg", alt:{es:"Plataforma MetaTrader 5", en:"MetaTrader 5 platform", fr:"Plateforme MetaTrader 5", de:"MetaTrader-5-Plattform", it:"Piattaforma MetaTrader 5"}},
+    {tipo:"imagen", src:"img/articulos/mt5.jpg", w:1400, h:575, alt:{es:"Plataforma MetaTrader 5", en:"MetaTrader 5 platform", fr:"Plateforme MetaTrader 5", de:"MetaTrader-5-Plattform", it:"Piattaforma MetaTrader 5"}},
     {tipo:"h4", t:{es:"TradingView", en:"TradingView", fr:"TradingView", de:"TradingView", it:"TradingView"}},
     {tipo:"p", t:{
       es:"TradingView es una plataforma especialmente popular para analizar gráficos. Destaca por su diseño visual, sus herramientas de dibujo, indicadores, alertas y la posibilidad de consultar ideas publicadas por otros usuarios. Muchas personas utilizan TradingView para hacer análisis y después ejecutan las operaciones desde MT4, MT5 o la plataforma del bróker. En algunos casos, TradingView también puede conectarse a determinados intermediarios.",
@@ -168,7 +168,7 @@ const ARTICULO_1 = {
       de:"Wichtig zu bedenken: Ein hübsches Chart oder ein Indikator sagt die Zukunft nicht voraus. Werkzeuge helfen, die Analyse zu strukturieren, beseitigen aber nicht die Unsicherheit des Marktes.",
       it:"È importante ricordare che un grafico bello o un indicatore non predicono il futuro. Gli strumenti aiutano a organizzare l'analisi, ma non eliminano l'incertezza del mercato.",
     }},
-    {tipo:"imagen", src:"img/articulos/tradingview.jpg", alt:{es:"Plataforma TradingView", en:"TradingView platform", fr:"Plateforme TradingView", de:"TradingView-Plattform", it:"Piattaforma TradingView"}},
+    {tipo:"imagen", src:"img/articulos/tradingview.jpg", w:1400, h:634, alt:{es:"Plataforma TradingView", en:"TradingView platform", fr:"Plateforme TradingView", de:"TradingView-Plattform", it:"Piattaforma TradingView"}},
     {tipo:"h3", t:{es:"Las velas japonesas: cómo se representa el precio", en:"Japanese candlesticks: how price is represented", fr:"Les chandeliers japonais : comment le prix est représenté", de:"Japanische Kerzen: Wie der Kurs dargestellt wird", it:"Le candele giapponesi: come si rappresenta il prezzo"}},
     {tipo:"p", t:{
       es:"Los gráficos de velas japonesas son una forma visual de mostrar cómo ha evolucionado el precio durante un periodo concreto: un minuto, una hora, un día o cualquier otro marco temporal. Cada vela muestra cuatro datos:",
@@ -190,7 +190,7 @@ const ARTICULO_1 = {
       de:"Eine bullische Kerze bedeutet meist, dass der Kurs über dem Eröffnungskurs geschlossen hat. Eine bärische Kerze bedeutet meist das Gegenteil. Eine einzelne Kerze erzählt jedoch nicht die ganze Geschichte. Die Analyse muss den Kontext berücksichtigen: Trend, relevante Niveaus, Volatilität, Nachrichten und Risikomanagement.",
       it:"Una candela rialzista di solito indica che il prezzo ha chiuso sopra il punto di apertura. Una candela ribassista indica di solito il contrario. Tuttavia, una singola candela non racconta tutta la storia. L'analisi deve tenere conto del contesto: tendenza, livelli rilevanti, volatilità, notizie e gestione del rischio.",
     }},
-    {tipo:"imagen", src:"img/articulos/velas.jpg", alt:{es:"Gráfico de velas japonesas", en:"Japanese candlestick chart", fr:"Graphique en chandeliers japonais", de:"Japanisches Kerzenchart", it:"Grafico a candele giapponesi"}},
+    {tipo:"imagen", src:"img/articulos/velas.jpg", w:1056, h:918, alt:{es:"Gráfico de velas japonesas", en:"Japanese candlestick chart", fr:"Graphique en chandeliers japonais", de:"Japanisches Kerzenchart", it:"Grafico a candele giapponesi"}},
     {tipo:"h3", t:{es:"¿Qué es un lote?", en:"What is a lot?", fr:"Qu'est-ce qu'un lot ?", de:"Was ist ein Lot?", it:"Cos'è un lotto?"}},
     {tipo:"p", t:{
       es:"Un lote es el tamaño de una posición. En otras palabras, indica cuánto estás operando. En Forex, de forma tradicional:",
@@ -364,7 +364,7 @@ const ARTICULO_1 = {
 const ARTICULO_2 = {
   id: "empresas-de-fondeo",
   categorias: ["riesgo"],
-  imagenPortada: "img/articulos/fondeo-intro.jpg",
+  imagenPortada: "img/articulos/fondeo-intro.jpg", imagenPortadaW: 828, imagenPortadaH: 466,
   titulo: {
     es: "Empresas de fondeo: qué son, cómo funcionan y qué debes saber antes de empezar",
     en: "Prop Trading Firms: What They Are, How They Work and What You Should Know Before Starting",
@@ -447,7 +447,7 @@ const ARTICULO_2 = {
       de:"Wichtig ist jedoch ein realistischer Blick: Eine Evaluierung zu bestehen ist nicht einfach, und die Zahlung einer Gebühr garantiert weder ein finanziertes Konto noch Auszahlungen.",
       it:"Ma è importante mantenere una visione realistica: superare una valutazione non è facile e pagare una quota non garantisce di ottenere un conto finanziato né di ricevere pagamenti.",
     }},
-    {tipo:"imagen", src:"img/articulos/fases-evaluacion.svg", alt:{es:"Fases de una evaluación de fondeo", en:"Phases of a prop firm evaluation", fr:"Phases d'une évaluation de prop trading", de:"Phasen einer Prop-Firm-Evaluierung", it:"Fasi di una valutazione di prop trading"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/fases-evaluacion.svg", w:800, h:300, alt:{es:"Fases de una evaluación de fondeo", en:"Phases of a prop firm evaluation", fr:"Phases d'une évaluation de prop trading", de:"Phasen einer Prop-Firm-Evaluierung", it:"Fasi di una valutazione di prop trading"}, leyenda:{
       es:"Evaluación → verificación → cuenta financiada: el recorrido típico de un programa de fondeo.",
       en:"Evaluation → verification → funded account: the typical path of a prop firm programme.",
       fr:"Évaluation → vérification → compte financé : le parcours type d'un programme de prop trading.",
@@ -534,7 +534,7 @@ const ARTICULO_2 = {
       {es:"Qué documentación fiscal puedes necesitar en tu país.", en:"What tax documentation you might need in your country.", fr:"Quels documents fiscaux vous pourriez devoir fournir dans votre pays.", de:"Welche Steuerunterlagen in Ihrem Land nötig sein könnten.", it:"Quale documentazione fiscale potresti dover fornire nel tuo paese."},
       {es:"Qué ocurre si se incumple una regla antes de pedir un pago.", en:"What happens if a rule is broken before requesting a payout.", fr:"Ce qui se passe en cas de non-respect d'une règle avant de demander un paiement.", de:"Was passiert, wenn vor einer Auszahlungsanfrage gegen eine Regel verstoßen wird.", it:"Cosa succede se si viola una regola prima di richiedere un pagamento."},
     ]},
-    {tipo:"imagen", src:"img/articulos/drawdown-comparison.svg", alt:{es:"Comparación entre drawdown fijo y dinámico", en:"Comparison between fixed and dynamic drawdown", fr:"Comparaison entre drawdown fixe et dynamique", de:"Vergleich zwischen festem und dynamischem Drawdown", it:"Confronto tra drawdown fisso e dinamico"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/drawdown-comparison.svg", w:800, h:280, alt:{es:"Comparación entre drawdown fijo y dinámico", en:"Comparison between fixed and dynamic drawdown", fr:"Comparaison entre drawdown fixe et dynamique", de:"Vergleich zwischen festem und dynamischem Drawdown", it:"Confronto tra drawdown fisso e dinamico"}, leyenda:{
       es:"A: límite de pérdida fijo sobre el saldo inicial. B: límite dinámico que se ajusta con las ganancias.",
       en:"A: fixed loss limit based on the starting balance. B: dynamic limit that adjusts with gains.",
       fr:"A : limite de perte fixe sur le solde initial. B : limite dynamique qui s'ajuste avec les gains.",
@@ -611,7 +611,7 @@ const ARTICULO_2 = {
       de:"Eine günstige Challenge kann teuer werden, wenn ihre Regeln schwer einzuhalten sind oder man bei jedem Regelverstoß erneut bezahlen muss.",
       it:"Una challenge economica può rivelarsi costosa se le sue regole sono difficili da rispettare o se obbliga a pagare di nuovo ogni volta che si viola una condizione.",
     }},
-    {tipo:"imagen", src:"img/articulos/costes-checklist.svg", alt:{es:"Distintos tipos de costes de un programa de fondeo", en:"Different types of costs in a prop trading programme", fr:"Différents types de coûts d'un programme de prop trading", de:"Verschiedene Kostenarten eines Prop-Trading-Programms", it:"Diversi tipi di costi di un programma di prop trading"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/costes-checklist.svg", w:720, h:280, alt:{es:"Distintos tipos de costes de un programa de fondeo", en:"Different types of costs in a prop trading programme", fr:"Différents types de coûts d'un programme de prop trading", de:"Verschiedene Kostenarten eines Prop-Trading-Programms", it:"Diversi tipi di costi di un programma di prop trading"}, leyenda:{
       es:"Antes de pagar una evaluación, súmalos todos: cuota, comisiones, spread, retiradas e impuestos.",
       en:"Before paying for an evaluation, add them all up: fee, commissions, spread, withdrawals and taxes.",
       fr:"Avant de payer une évaluation, additionnez-les tous : frais, commissions, spread, retraits et impôts.",
@@ -693,7 +693,7 @@ const ARTICULO_2 = {
 const ARTICULO_3 = {
   id: "falsas-rupturas",
   categorias: ["priceaction"],
-  imagenPortada: "img/articulos/falsas-rupturas-intro.jpg",
+  imagenPortada: "img/articulos/falsas-rupturas-intro.jpg", imagenPortadaW: 1400, imagenPortadaH: 808,
   titulo: {
     es: "Falsas rupturas en trading: cómo reconocer la trampa antes de entrar",
     en: "False Breakouts in Trading: How to Spot the Trap Before You Enter",
@@ -745,7 +745,7 @@ const ARTICULO_3 = {
       de:"Viele Trader erwarten, dass der Kurs bei einem Ausbruch über den Widerstand weiter steigt. Deshalb platzieren sie Kauforders knapp über diesem Niveau. Gleichzeitig setzen Personen, die short waren, ihre Stop-Loss meist in derselben Zone. Überschreitet der Kurs das Hoch, kann er viele Orders gleichzeitig auslösen. Gelingt es ihm jedoch nicht, darüber zu bleiben, und kehrt er schnell in die Spanne zurück, könnte der Ausbruch falsch gewesen sein.",
       it:"Molti trader si aspettano che, se la resistenza si rompe, il prezzo continui a salire. Per questo posizionano ordini di acquisto appena sopra quel livello. Allo stesso tempo, chi era short di solito posiziona lo stop loss in quella stessa zona. Quando il prezzo supera il massimo, può attivare molti ordini contemporaneamente. Tuttavia, se non riesce a mantenersi sopra e torna rapidamente nel range, il breakout potrebbe essere stato falso.",
     }},
-    {tipo:"imagen", src:"img/articulos/rango-soporte-resistencia.svg", alt:{es:"Precio moviéndose entre una resistencia y un soporte", en:"Price moving between a resistance and a support", fr:"Prix évoluant entre une résistance et un support", de:"Kurs bewegt sich zwischen Widerstand und Unterstützung", it:"Prezzo che si muove tra una resistenza e un supporto"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/rango-soporte-resistencia.svg", w:740, h:280, alt:{es:"Precio moviéndose entre una resistencia y un soporte", en:"Price moving between a resistance and a support", fr:"Prix évoluant entre une résistance et un support", de:"Kurs bewegt sich zwischen Widerstand und Unterstützung", it:"Prezzo che si muove tra una resistenza e un supporto"}, leyenda:{
       es:"El precio rebota repetidamente entre la resistencia (arriba) y el soporte (abajo) hasta que rompe uno de los dos niveles.",
       en:"Price repeatedly bounces between the resistance (top) and the support (bottom) until it breaks one of the two levels.",
       fr:"Le prix rebondit à plusieurs reprises entre la résistance (en haut) et le support (en bas) jusqu'à casser l'un des deux niveaux.",
@@ -827,7 +827,7 @@ const ARTICULO_3 = {
       de:"Ein Docht allein bestätigt keinen Fehlausbruch, deutet aber auf eine Ablehnung hin. Je schneller der Kurs das Niveau verliert, desto mehr Vorsicht ist geboten.",
       it:"Uno stoppino da solo non conferma un falso breakout, ma indica un rigetto. Più velocemente il prezzo perde il livello, più prudenza conviene avere.",
     }},
-    {tipo:"imagen", src:"img/articulos/ruptura-diagrama.svg", alt:{es:"Diagrama de una falsa ruptura sobre resistencia", en:"Diagram of a false breakout above resistance", fr:"Schéma d'une fausse cassure au-dessus d'une résistance", de:"Diagramm eines Fehlausbruchs über einem Widerstand", it:"Diagramma di un falso breakout sopra una resistenza"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/ruptura-diagrama.svg", w:460, h:260, alt:{es:"Diagrama de una falsa ruptura sobre resistencia", en:"Diagram of a false breakout above resistance", fr:"Schéma d'une fausse cassure au-dessus d'une résistance", de:"Diagramm eines Fehlausbruchs über einem Widerstand", it:"Diagramma di un falso breakout sopra una resistenza"}, leyenda:{
       es:"El precio supera la resistencia con una mecha larga, pero no consigue mantenerse fuera y regresa al rango.",
       en:"Price breaks the resistance with a long wick, but fails to hold outside and returns to the range.",
       fr:"Le prix dépasse la résistance avec une longue mèche, mais ne parvient pas à s'y maintenir et revient dans la fourchette.",
@@ -864,7 +864,7 @@ const ARTICULO_3 = {
       de:"Diese Rückkehr kann ein Zeichen dafür sein, dass der bärische Ausbruch keine Fortsetzung hatte. Sie garantiert keinen anschließenden Anstieg, verändert aber die Einschätzung des Kontexts.",
       it:"Quel ritorno può essere un segnale che il breakout ribassista non ha avuto continuità. Non garantisce una salita successiva, ma cambia la lettura del contesto.",
     }},
-    {tipo:"imagen", src:"img/articulos/real-vs-falsa.svg", alt:{es:"Comparación entre una ruptura real y una falsa", en:"Comparison between a real and a false breakout", fr:"Comparaison entre une vraie et une fausse cassure", de:"Vergleich zwischen echtem und falschem Ausbruch", it:"Confronto tra un breakout reale e uno falso"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/real-vs-falsa.svg", w:720, h:220, alt:{es:"Comparación entre una ruptura real y una falsa", en:"Comparison between a real and a false breakout", fr:"Comparaison entre une vraie et une fausse cassure", de:"Vergleich zwischen echtem und falschem Ausbruch", it:"Confronto tra un breakout reale e uno falso"}, leyenda:{
       es:"Ruptura real: cierre claro fuera del nivel y continuidad. Falsa ruptura: mecha, rechazo y regreso rápido al rango.",
       en:"Real breakout: clear close outside the level and continuation. False breakout: wick, rejection and a fast return to the range.",
       fr:"Vraie cassure : clôture nette hors du niveau et continuation. Fausse cassure : mèche, rejet et retour rapide dans la fourchette.",
@@ -879,7 +879,7 @@ const ARTICULO_3 = {
       de:"Viele Trader glauben, sie müssten bei der ersten Ausbruchskerze einsteigen. Aber auf Bestätigung zu warten bedeutet nicht, zu spät zu kommen: Es bedeutet, mehr Informationen zu verlangen, bevor man ein Risiko eingeht. Eine umsichtige Art, einen Ausbruch zu analysieren, ist diese Abfolge zu beobachten:",
       it:"Molti trader credono di dover entrare sulla primissima candela di breakout. Ma aspettare una conferma non significa arrivare tardi: significa esigere più informazioni prima di assumersi un rischio. Un modo prudente di analizzare un breakout è osservare questa sequenza:",
     }},
-    {tipo:"imagen", src:"img/articulos/secuencia-decision.svg", alt:{es:"Secuencia para analizar una ruptura con paciencia", en:"Sequence for patiently analysing a breakout", fr:"Séquence pour analyser une cassure avec patience", de:"Abfolge zur geduldigen Analyse eines Ausbruchs", it:"Sequenza per analizzare un breakout con pazienza"}},
+    {tipo:"imagen", src:"img/articulos/secuencia-decision.svg", w:910, h:230, alt:{es:"Secuencia para analizar una ruptura con paciencia", en:"Sequence for patiently analysing a breakout", fr:"Séquence pour analyser une cassure avec patience", de:"Abfolge zur geduldigen Analyse eines Ausbruchs", it:"Sequenza per analizzare un breakout con pazienza"}},
     {tipo:"lista", items:[
       {es:"Identificar un nivel relevante.", en:"Identify a relevant level.", fr:"Identifier un niveau pertinent.", de:"Ein relevantes Niveau identifizieren.", it:"Identificare un livello rilevante."},
       {es:"Esperar a que el precio lo atraviese.", en:"Wait for price to cross it.", fr:"Attendre que le prix le traverse.", de:"Warten, bis der Kurs es durchquert.", it:"Aspettare che il prezzo lo attraversi."},
@@ -937,7 +937,7 @@ const ARTICULO_3 = {
 const ARTICULO_4 = {
   id: "gestion-del-riesgo",
   categorias: ["riesgo", "psicologia"],
-  imagenPortada: "img/articulos/riesgo-intro.jpg",
+  imagenPortada: "img/articulos/riesgo-intro.jpg", imagenPortadaW: 1062, imagenPortadaH: 606,
   titulo: {
     es: "La gestión del riesgo en trading: por qué proteger tu cuenta es más importante que ganar rápido",
     en: "Risk Management in Trading: Why Protecting Your Account Matters More Than Winning Fast",
@@ -989,7 +989,7 @@ const ARTICULO_4 = {
       {es:"Qué tamaño de posición debo utilizar.", en:"What position size I should use.", fr:"Quelle taille de position je dois utiliser.", de:"Welche Positionsgröße ich verwenden sollte.", it:"Quale dimensione della posizione dovrei usare."},
       {es:"Si el posible beneficio compensa el riesgo asumido.", en:"Whether the potential profit compensates for the risk taken.", fr:"Si le bénéfice potentiel compense le risque pris.", de:"Ob der mögliche Gewinn das eingegangene Risiko ausgleicht.", it:"Se il possibile profitto compensa il rischio assunto."},
     ]},
-    {tipo:"imagen", src:"img/articulos/supervivencia-capital.svg", alt:{es:"Comparación entre una curva de capital descontrolada y una controlada", en:"Comparison between an uncontrolled and a controlled equity curve", fr:"Comparaison entre une courbe de capital incontrôlée et une courbe maîtrisée", de:"Vergleich zwischen einer unkontrollierten und einer kontrollierten Kapitalkurve", it:"Confronto tra una curva di capitale incontrollata e una controllata"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/supervivencia-capital.svg", w:740, h:280, alt:{es:"Comparación entre una curva de capital descontrolada y una controlada", en:"Comparison between an uncontrolled and a controlled equity curve", fr:"Comparaison entre une courbe de capital incontrôlée et une courbe maîtrisée", de:"Vergleich zwischen einer unkontrollierten und einer kontrollierten Kapitalkurve", it:"Confronto tra una curva di capitale incontrollata e una controllata"}, leyenda:{
       es:"Arriesgar demasiado por operación (rojo) puede acabar con la cuenta en poco tiempo. Un riesgo controlado (verde) permite seguir operando a largo plazo.",
       en:"Risking too much per trade (red) can wipe out the account quickly. Controlled risk (green) allows you to keep trading over the long term.",
       fr:"Risquer trop par position (rouge) peut ruiner le compte rapidement. Un risque maîtrisé (vert) permet de continuer à trader sur le long terme.",
@@ -1016,7 +1016,7 @@ const ARTICULO_4 = {
       de:"Erst danach sollte die Positionsgröße berechnet werden. Es umgekehrt zu tun – ein großes Lot wählen und anschließend nach einem Platz für den Stop suchen – ist meist eine schlechte Praxis.",
       it:"Solo dopo si dovrebbe calcolare la dimensione della posizione. Fare il contrario — scegliere un lotto grande e cercare poi dove mettere lo stop — è di solito una cattiva pratica.",
     }},
-    {tipo:"imagen", src:"img/articulos/tamano-posicion.svg", alt:{es:"Diagrama de entrada, stop loss y objetivo en una operación", en:"Diagram of entry, stop loss and target on a trade", fr:"Schéma d'entrée, stop loss et objectif sur une position", de:"Diagramm von Einstieg, Stop-Loss und Ziel bei einem Trade", it:"Diagramma di ingresso, stop loss e obiettivo in un'operazione"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/tamano-posicion.svg", w:800, h:280, alt:{es:"Diagrama de entrada, stop loss y objetivo en una operación", en:"Diagram of entry, stop loss and target on a trade", fr:"Schéma d'entrée, stop loss et objectif sur une position", de:"Diagramm von Einstieg, Stop-Loss und Ziel bei einem Trade", it:"Diagramma di ingresso, stop loss e obiettivo in un'operazione"}, leyenda:{
       es:"Primero se define la entrada y el stop loss; el tamaño de la posición se calcula después, en función de esa distancia.",
       en:"First you define the entry and the stop loss; position size is then calculated based on that distance.",
       fr:"On définit d'abord l'entrée et le stop loss ; la taille de la position est ensuite calculée en fonction de cette distance.",
@@ -1061,7 +1061,7 @@ const ARTICULO_4 = {
       de:"Das Risiko-Rendite-Verhältnis vergleicht, was riskiert wird, mit dem, was erwartet wird zu gewinnen. Ein Verhältnis von 1:2 bedeutet zum Beispiel, dass für jede Risikoeinheit das potenzielle Ziel zwei Ertragseinheiten entspricht. Das garantiert kein Ergebnis, hilft aber zu beurteilen, ob ein Trade eine kohärente Struktur hat.",
       it:"Il rapporto rischio-rendimento confronta ciò che si rischia con ciò che ci si aspetta di guadagnare. Ad esempio, un rapporto 1:2 significa che, per ogni unità di rischio, l'obiettivo potenziale equivale a due unità di profitto. Non è una garanzia di risultato, ma aiuta a valutare se un'operazione ha una struttura coerente.",
     }},
-    {tipo:"imagen", src:"img/articulos/ratio-riesgo-beneficio.svg", alt:{es:"Relación riesgo-beneficio de 1 a 2", en:"Risk-reward ratio of 1 to 2", fr:"Ratio risque-rendement de 1 pour 2", de:"Risiko-Rendite-Verhältnis von 1 zu 2", it:"Rapporto rischio-rendimento di 1 a 2"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/ratio-riesgo-beneficio.svg", w:640, h:300, alt:{es:"Relación riesgo-beneficio de 1 a 2", en:"Risk-reward ratio of 1 to 2", fr:"Ratio risque-rendement de 1 pour 2", de:"Risiko-Rendite-Verhältnis von 1 zu 2", it:"Rapporto rischio-rendimento di 1 a 2"}, leyenda:{
       es:"Por cada unidad que se arriesga, el objetivo busca dos unidades de beneficio: una relación 1:2.",
       en:"For every unit risked, the target aims for two units of profit: a 1:2 ratio.",
       fr:"Pour chaque unité risquée, l'objectif vise deux unités de profit : un ratio de 1:2.",
@@ -1091,7 +1091,7 @@ const ARTICULO_4 = {
       de:"Das Ziel ist nicht, diese Emotionen nicht zu fühlen. Das ist unmöglich. Das Ziel ist, ihnen nicht die Entscheidung zu überlassen. Eine gute Praxis ist, vor dem Trading einfache Regeln aufzustellen: maximales Risiko pro Trade, maximale Anzahl an Trades pro Tag, maximaler Tagesverlust und klare Bedingungen, wann man aufhört zu handeln.",
       it:"L'obiettivo non è non provare queste emozioni. È impossibile. L'obiettivo è non permettere che decidano al posto nostro. Una buona pratica è creare regole semplici prima di operare: rischio massimo per operazione, numero massimo di operazioni al giorno, perdita massima giornaliera e condizioni chiare per smettere di operare.",
     }},
-    {tipo:"imagen", src:"img/articulos/reglas-riesgo.svg", alt:{es:"Regla de riesgo máximo por operación", en:"Maximum risk per trade rule", fr:"Règle de risque maximum par position", de:"Regel für maximales Risiko pro Trade", it:"Regola del rischio massimo per operazione"}, leyenda:{
+    {tipo:"imagen", src:"img/articulos/reglas-riesgo.svg", w:600, h:300, alt:{es:"Regla de riesgo máximo por operación", en:"Maximum risk per trade rule", fr:"Règle de risque maximum par position", de:"Regel für maximales Risiko pro Trade", it:"Regola del rischio massimo per operazione"}, leyenda:{
       es:"Fijar de antemano el % máximo que se arriesga en cada operación es una de las reglas más simples y más efectivas.",
       en:"Setting the maximum % you'll risk on each trade in advance is one of the simplest and most effective rules.",
       fr:"Fixer à l'avance le % maximum risqué sur chaque position est l'une des règles les plus simples et les plus efficaces.",
@@ -1189,7 +1189,7 @@ const ARTICULO_4 = {
 const ARTICULO_5 = {
   id: "apertura-londres-gbpusd",
   categorias: ["forex", "priceaction"],
-  imagenPortada: "img/articulos/londres-portada.jpg",
+  imagenPortada: "img/articulos/londres-portada.jpg", imagenPortadaW: 1400, imagenPortadaH: 787,
   titulo: {
     es: "La apertura de Londres en GBP/USD",
     en: "The London Open on GBP/USD",
@@ -1258,7 +1258,7 @@ const ARTICULO_5 = {
       {es:"Mide la amplitud. Resta mínimo a máximo y compárala con la volatilidad habitual reciente de GBP/USD.", en:"Measure the width. Subtract the low from the high and compare it with GBP/USD's recent typical volatility.", fr:"Mesurez l'amplitude. Soustrayez le plus bas du plus haut et comparez-la à la volatilité habituelle récente du GBP/USD.", de:"Messen Sie die Breite. Ziehen Sie das Tief vom Hoch ab und vergleichen Sie es mit der jüngsten üblichen Volatilität von GBP/USD.", it:"Misura l'ampiezza. Sottrai il minimo dal massimo e confrontala con la volatilità abituale recente di GBP/USD."},
       {es:"Anota el contexto. Tendencia previa, máximos y mínimos del día anterior y noticias británicas o estadounidenses próximas.", en:"Note the context. Prior trend, previous day's highs and lows, and upcoming British or US news.", fr:"Notez le contexte. Tendance précédente, plus hauts et plus bas de la veille et actualités britanniques ou américaines à venir.", de:"Notieren Sie den Kontext. Vorherigen Trend, Hoch und Tief des Vortags sowie bevorstehende britische oder US-Nachrichten.", it:"Annota il contesto. Trend precedente, massimi e minimi del giorno prima e notizie britanniche o statunitensi imminenti."},
     ]},
-    {tipo:"imagen", src:"img/articulos/londres-marcar-rango.jpg", alt:{
+    {tipo:"imagen", src:"img/articulos/londres-marcar-rango.jpg", w:1400, h:787, alt:{
       es:"Cómo marcar el máximo y el mínimo asiático antes de la apertura de Londres", en:"How to mark the Asian high and low before the London open", fr:"Comment marquer le plus haut et le plus bas asiatiques avant l'ouverture de Londres", de:"Wie man das asiatische Hoch und Tief vor der Londoner Eröffnung markiert", it:"Come segnare il massimo e il minimo asiatico prima dell'apertura di Londra"
     }, leyenda:{
       es:"La caja asiática queda definida antes de valorar cualquier entrada en Londres.", en:"The Asian box is defined before considering any entry at London.", fr:"La boîte asiatique est définie avant d'envisager la moindre entrée à Londres.", de:"Die asiatische Box wird festgelegt, bevor über einen Einstieg in London nachgedacht wird.", it:"La scatola asiatica viene definita prima di valutare qualsiasi ingresso a Londra."
@@ -1291,7 +1291,7 @@ const ARTICULO_5 = {
         texto:{es:"No conviene perseguir una ruptura tardía. Exige mejor relación entre riesgo y objetivo y atención a niveles superiores.", en:"It's not worth chasing a late breakout. It demands a better risk-to-target ratio and attention to higher-level references.", fr:"Il ne convient pas de poursuivre une cassure tardive. Cela exige un meilleur rapport risque/objectif et de l'attention aux niveaux supérieurs.", de:"Ein verspäteter Ausbruch sollte nicht gejagt werden. Es erfordert ein besseres Risiko-Ziel-Verhältnis und Aufmerksamkeit für übergeordnete Niveaus.", it:"Non conviene inseguire un breakout tardivo. Richiede un miglior rapporto rischio/obiettivo e attenzione ai livelli superiori."},
       }
     },
-    {tipo:"imagen", src:"img/articulos/londres-rango-estrecho-amplio.jpg", alt:{
+    {tipo:"imagen", src:"img/articulos/londres-rango-estrecho-amplio.jpg", w:1400, h:787, alt:{
       es:"Comparación entre un rango asiático estrecho y uno amplio", en:"Comparison between a narrow and a wide Asian range", fr:"Comparaison entre un range asiatique étroit et un large", de:"Vergleich zwischen einer engen und einer weiten asiatischen Spanne", it:"Confronto tra un range asiatico stretto e uno ampio"
     }, leyenda:{
       es:"Un rango estrecho puede ofrecer espacio de expansión; uno amplio pide más paciencia y selectividad.", en:"A narrow range can offer room to expand; a wide one calls for more patience and selectivity.", fr:"Un range étroit peut offrir de l'espace pour s'étendre ; un large demande plus de patience et de sélectivité.", de:"Eine enge Spanne kann Raum zur Ausdehnung bieten; eine weite verlangt mehr Geduld und Selektivität.", it:"Un range stretto può offrire spazio di espansione; uno ampio richiede più pazienza e selettività."
@@ -1319,7 +1319,7 @@ const ARTICULO_5 = {
       {es:"Invalidación lógica. El stop queda donde la idea deja de ser válida, no en una distancia arbitraria.", en:"Logical invalidation. The stop sits where the idea stops being valid, not at an arbitrary distance.", fr:"Invalidation logique. Le stop se situe là où l'idée cesse d'être valide, pas à une distance arbitraire.", de:"Logische Invalidierung. Der Stop liegt dort, wo die Idee ungültig wird, nicht in einer willkürlichen Distanz.", it:"Invalidazione logica. Lo stop si trova dove l'idea smette di essere valida, non a una distanza arbitraria."},
       {es:"Objetivo con espacio. Debe existir recorrido hasta liquidez previa, máximo o mínimo anterior, o un nivel relevante; si el objetivo está demasiado cerca, no hay operación.", en:"A target with room. There must be distance to prior liquidity, a previous high or low, or a relevant level; if the target is too close, there's no trade.", fr:"Un objectif avec de l'espace. Il doit exister un parcours jusqu'à une liquidité antérieure, un plus haut ou plus bas précédent, ou un niveau pertinent ; si l'objectif est trop proche, il n'y a pas de position.", de:"Ein Ziel mit Raum. Es muss Weg bis zu vorheriger Liquidität, einem früheren Hoch oder Tief oder einem relevanten Niveau bestehen; ist das Ziel zu nah, gibt es keinen Trade.", it:"Un obiettivo con spazio. Deve esistere un percorso fino a liquidità precedente, un massimo o minimo precedente, o un livello rilevante; se l'obiettivo è troppo vicino, non c'è operazione."},
     ]},
-    {tipo:"imagen", src:"img/articulos/londres-ruptura-retest.jpg", alt:{
+    {tipo:"imagen", src:"img/articulos/londres-ruptura-retest.jpg", w:1400, h:787, alt:{
       es:"Ruptura alcista del máximo asiático con retesteo y confirmación", en:"Bullish breakout of the Asian high with retest and confirmation", fr:"Cassure haussière du plus haut asiatique avec retest et confirmation", de:"Bullischer Ausbruch über das asiatische Hoch mit Retest und Bestätigung", it:"Breakout rialzista del massimo asiatico con retest e conferma"
     }, leyenda:{
       es:"Ejemplo didáctico de ruptura confirmada. La ejecución se plantea después del retesteo, no durante el impulso inicial.", en:"Teaching example of a confirmed breakout. Execution is considered after the retest, not during the initial thrust.", fr:"Exemple pédagogique de cassure confirmée. L'exécution se pose après le retest, pas pendant l'impulsion initiale.", de:"Lehrbeispiel eines bestätigten Ausbruchs. Die Ausführung wird nach dem Retest erwogen, nicht während des ersten Impulses.", it:"Esempio didattico di breakout confermato. L'esecuzione si valuta dopo il retest, non durante l'impulso iniziale."
@@ -1363,14 +1363,14 @@ const ARTICULO_5 = {
       de:"Um ein mögliches Fegen zu erwägen, beobachten Sie drei Elemente: deutliches Durchdringen eines Extrems, Unfähigkeit, außerhalb zu schließen oder zu bleiben, und Rückverschiebung ins Innere. Eine Strukturbestätigung kann erlauben, die Bewegung zur Gegenseite in Betracht zu ziehen, aber nur, wenn Invalidierung und Chance-Risiko-Verhältnis stimmig sind.",
       it:"Per considerare un possibile spazzamento, osserva tre elementi: penetrazione evidente di un estremo, incapacità di chiudere o mantenersi fuori e spostamento di ritorno all'interno. Una conferma di struttura può permettere di valutare il movimento verso il lato opposto, ma solo se l'invalidazione e il rapporto rischio/rendimento sono coerenti.",
     }},
-    {tipo:"imagen", src:"img/articulos/londres-falsa-ruptura.jpg", alt:{
+    {tipo:"imagen", src:"img/articulos/londres-falsa-ruptura.jpg", w:1400, h:787, alt:{
       es:"Falsa ruptura y barrido de liquidez sobre el máximo asiático", en:"False breakout and liquidity sweep above the Asian high", fr:"Fausse cassure et balayage de liquidité au-dessus du plus haut asiatique", de:"Fehlausbruch und Liquiditätsfegen über dem asiatischen Hoch", it:"Falso breakout e spazzamento di liquidità sopra il massimo asiatico"
     }, leyenda:{
       es:"La mecha supera el máximo, pero el cierre vuelve dentro. La diferencia entre “tocar” y “aceptar” el precio fuera es decisiva.", en:"The wick clears the high, but the close returns inside. The difference between price merely \"touching\" and \"accepting\" outside is decisive.", fr:"La mèche dépasse le plus haut, mais la clôture revient à l'intérieur. La différence entre « toucher » et « accepter » le prix à l'extérieur est décisive.", de:"Der Docht überwindet das Hoch, doch der Schluss kehrt zurück nach innen. Der Unterschied zwischen bloßem „Berühren“ und „Akzeptieren“ des Kurses außerhalb ist entscheidend.", it:"Lo stoppino supera il massimo, ma la chiusura torna dentro. La differenza tra \"toccare\" e \"accettare\" il prezzo fuori è decisiva."
     }},
 
     {tipo:"h3", t:{es:"Un plan de actuación sencillo", en:"A simple action plan", fr:"Un plan d'action simple", de:"Ein einfacher Handlungsplan", it:"Un piano d'azione semplice"}},
-    {tipo:"imagen", src:"img/articulos/londres-arbol-decision.jpg", alt:{
+    {tipo:"imagen", src:"img/articulos/londres-arbol-decision.jpg", w:1400, h:787, alt:{
       es:"Árbol de decisión para operar la apertura de Londres", en:"Decision tree for trading the London open", fr:"Arbre de décision pour trader l'ouverture de Londres", de:"Entscheidungsbaum für den Handel der Londoner Eröffnung", it:"Albero decisionale per operare l'apertura di Londra"
     }, leyenda:{
       es:"El plan prioriza esperar, confirmar y definir el riesgo antes de ejecutar.", en:"The plan prioritises waiting, confirming and defining the risk before executing.", fr:"Le plan privilégie l'attente, la confirmation et la définition du risque avant l'exécution.", de:"Der Plan setzt Priorität auf Warten, Bestätigen und Risikodefinition vor der Ausführung.", it:"Il piano dà priorità all'attesa, alla conferma e alla definizione del rischio prima dell'esecuzione."

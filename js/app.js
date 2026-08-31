@@ -283,7 +283,7 @@ function renderArticleBlock(b) {
     case "p": return `<p>${esc(L(b.t))}</p>`;
     case "lista": return `<ul>${b.items.map(item => `<li>${esc(L(item))}</li>`).join("")}</ul>`;
     case "imagen": return `<figure class="article-figure reveal">
-        <img src="${esc(b.src)}" alt="${esc(L(b.alt))}" loading="lazy">
+        <img src="${esc(b.src)}" alt="${esc(L(b.alt))}" loading="lazy"${b.w ? ` width="${b.w}" height="${b.h}"` : ""}>
         ${b.leyenda ? `<figcaption>${esc(L(b.leyenda))}</figcaption>` : ""}
       </figure>`;
     case "callout": return `<div class="callout-box callout-${esc(b.variant || "info")} reveal">${esc(L(b.t))}</div>`;
@@ -327,7 +327,7 @@ function articleFullHtml(article, index) {
       <h2>${esc(L(article.titulo))}</h2>
       <p class="article-meta">${readMin} ${esc(t("articles_read_time"))} · <a class="article-permalink" href="articulos/${esc(article.id)}/">${esc(t("articles_permalink"))}</a></p>
     </div>
-    ${article.imagenPortada ? `<div class="article-cover"><img src="${esc(article.imagenPortada)}" alt="${esc(L(article.titulo))}" loading="lazy"></div>` : ""}
+    ${article.imagenPortada ? `<div class="article-cover"><img src="${esc(article.imagenPortada)}" alt="${esc(L(article.titulo))}" loading="lazy"${article.imagenPortadaW ? ` width="${article.imagenPortadaW}" height="${article.imagenPortadaH}"` : ""}></div>` : ""}
     <div class="article-body">
       ${article.bloques.map(renderArticleBlock).join("")}
       <p class="disclaimer-box">${esc(L(article.aviso))}</p>
