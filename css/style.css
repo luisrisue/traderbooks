@@ -143,6 +143,9 @@ section{padding:48px 0}
 .article-body h3{font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin:34px 0 14px;color:var(--text)}
 .article-body h4{font-family:var(--font-display);font-size:1.08rem;font-weight:700;margin:24px 0 10px;color:var(--accent2)}
 .article-body p{color:var(--muted);font-size:1.02rem;margin-bottom:16px}
+.article-body p a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+.article-body p a:hover{color:var(--accent)}
+.article-body p strong{color:var(--text)}
 .article-body ul{margin:0 0 20px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:9px}
 .article-body ul li{color:var(--muted);font-size:1rem;padding-left:26px;position:relative}
 .article-body ul li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--accent),var(--accent2))}

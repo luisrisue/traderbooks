@@ -276,11 +276,25 @@ function bindGlossaryToolbar() {
 
 /* ---------- Articulos ---------- */
 
+function renderInline(text) {
+  const re = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
+  let out = "";
+  let last = 0;
+  let m;
+  while ((m = re.exec(text))) {
+    out += esc(text.slice(last, m.index));
+    out += m[1] !== undefined ? `<a href="${esc(m[2])}">${esc(m[1])}</a>` : `<strong>${esc(m[3])}</strong>`;
+    last = re.lastIndex;
+  }
+  out += esc(text.slice(last));
+  return out;
+}
+
 function renderArticleBlock(b) {
   switch (b.tipo) {
     case "h3": return `<h3>${esc(L(b.t))}</h3>`;
     case "h4": return `<h4>${esc(L(b.t))}</h4>`;
-    case "p": return `<p>${esc(L(b.t))}</p>`;
+    case "p": return `<p>${renderInline(L(b.t))}</p>`;
     case "lista": return `<ul>${b.items.map(item => `<li>${esc(L(item))}</li>`).join("")}</ul>`;
     case "imagen": return `<figure class="article-figure reveal">
         <img src="${esc(b.src)}" alt="${esc(L(b.alt))}" loading="lazy"${b.w ? ` width="${b.w}" height="${b.h}"` : ""}>

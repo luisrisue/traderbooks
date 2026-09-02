@@ -1,0 +1,22 @@
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141d3a"/>
+      <stop offset="1" stop-color="#1a2547"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#ffd479"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="798" height="238" rx="19" fill="none" stroke="#26315a"/>
+  
+<line x1="40" y1="150" x2="760" y2="150" stroke="#f5a623" stroke-width="2" stroke-dasharray="7 5"/>
+<polyline points="40,190 90,175 140,185 190,160 240,170 290,120 340,155 390,175 440,150 490,165 540,110 590,95 640,105 690,80 740,90" fill="none" stroke="#eaeffa" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="290" cy="120" r="14" fill="none" stroke="#ef5b5b" stroke-width="2.5"/>
+<circle cx="590" cy="95" r="14" fill="none" stroke="#37d39b" stroke-width="2.5"/>
+<path d="M290,134 L290,150" stroke="#ef5b5b" stroke-width="2" stroke-dasharray="3 3"/>
+<path d="M590,109 L590,150" stroke="#37d39b" stroke-width="2" stroke-dasharray="3 3"/>
+
+</svg>
