@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Libro | Traderbooks</title><meta name="description" content="Libros de trading de Luis Risueño Gómez en cinco idiomas."><link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="../css/style.css?v=18"><style>body{max-width:1000px;margin:auto;padding:24px 20px 60px}.top{padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:32px}.top a{font-weight:800;text-decoration:none;color:var(--accent2)}.book{display:grid;grid-template-columns:minmax(180px,280px) 1fr;gap:40px;align-items:start}.book img{width:100%;height:auto;border-radius:10px}.book h1{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;margin:0 0 20px}.book p{line-height:1.7;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.back{display:inline-block;margin-top:32px;color:var(--accent2)}@media(max-width:620px){.book{grid-template-columns:1fr;gap:24px}.book img{max-width:230px;justify-self:center}}</style></head>
+<body><header class="top"><a href="../">Luis Risueño Gómez · traderbooks.net</a></header><main id="book"><p>Cargando libro…</p></main><a class="back" id="back" href="../#books">Volver al catálogo</a><noscript><p>Activa JavaScript para ver esta ficha o consulta el <a href="../#books">catálogo completo</a>.</p></noscript><script src="../data/books.js?v=20261107"></script><script>
+'use strict';
+(function(){
+ const params=new URLSearchParams(location.search);
+ const asin=(params.get('asin')||'').toUpperCase();
+ const book=BOOKS.find(b=>b.asin===asin||b.id===(params.get('id')||''));
+ const root=document.getElementById('book');
+ if(!book){root.textContent='No se ha encontrado el libro. Puedes buscarlo en el catálogo completo.';return;}
+ const labels={es:['Volver al catálogo','Ver en Amazon','Idioma de la edición: español','Contenido educativo. Operar en los mercados implica riesgo.'],en:['Back to the catalogue','View on Amazon','Edition language: English','Educational content. Trading involves risk.'],fr:['Retour au catalogue','Voir sur Amazon','Langue de cette édition : français','Contenu éducatif. Le trading comporte des risques.'],de:['Zurück zum Katalog','Bei Amazon ansehen','Sprache dieser Ausgabe: Deutsch','Bildungsinhalte. Der Handel birgt Risiken.'],it:['Torna al catalogo','Vedi su Amazon','Lingua di questa edizione: italiano','Contenuti didattici. Il trading comporta rischi.']};
+ const l=labels[book.lang]||labels.es;document.documentElement.lang=book.lang;
+ document.title=book.titulo+' | Luis Risueño Gómez';document.querySelector('meta[name="description"]').content=book.descripcion;
+ const canonical=document.createElement('link');canonical.rel='canonical';canonical.href=location.origin+location.pathname+'?asin='+encodeURIComponent(book.asin);document.head.append(canonical);
+ const meta=(property,content)=>{const m=document.createElement('meta');m.setAttribute('property',property);m.content=content;document.head.append(m);};
+ meta('og:type','book');meta('og:title',book.titulo);meta('og:description',book.descripcion);meta('og:image',new URL(book.portada,location.origin+'/').href);meta('og:url',canonical.href);
+ root.replaceChildren();root.className='book';const cover=document.createElement('img');cover.src=new URL(book.portada,location.origin+'/').href;cover.alt=book.titulo;root.append(cover);
+ const content=document.createElement('div');const title=document.createElement('h1');title.textContent=book.titulo;content.append(title);
+ const lang=document.createElement('p');lang.textContent=l[2];content.append(lang);const description=document.createElement('p');description.textContent=book.descripcion;content.append(description);
+ const actions=document.createElement('div');actions.className='actions';
+ const stores={es:'es',en:'com',fr:'fr',de:'de',it:'it'};
+ const ordered=[book.lang,...Object.keys(stores).filter(k=>k!==book.lang)];
+ ordered.forEach((key,i)=>{const a=document.createElement('a');a.className=i===0?'btn-amazon':'store-flag';a.href='https://www.amazon.'+stores[key]+'/dp/'+book.asin;a.target='_blank';a.rel='noopener noreferrer sponsored';a.textContent=i===0?l[1]+' amazon.'+stores[key]:'Amazon '+key.toUpperCase();actions.append(a);});
+ content.append(actions);const notice=document.createElement('p');notice.textContent=l[3];content.append(notice);root.append(content);document.getElementById('back').textContent=l[0];
+ const schema=document.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'Book',name:book.titulo,description:book.descripcion,inLanguage:book.lang,image:cover.src,url:canonical.href,author:{'@type':'Person',name:'Luis Risueño Gómez'}});document.head.append(schema);
+})();
+</script></body></html>
