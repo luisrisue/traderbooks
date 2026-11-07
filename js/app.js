@@ -136,7 +136,7 @@ function viewHome() {
         <a class="btn ghost" href="#author">${esc(t("hero_cta2"))}</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><strong>${BOOKS.length}</strong><span>${esc(t("stat_books"))}</span></div>
+        <div class="stat"><strong>40+</strong><span>${esc(({es:"libros de trading",en:"trading books",fr:"livres de trading",de:"Trading-Bücher",it:"libri di trading"}[state.lang] || "libros de trading"))}</span></div>
         <div class="stat"><strong>${LANGS.length}</strong><span>${esc(t("stat_langs"))}</span></div>
         <div class="stat"><strong>${catCount}</strong><span>${esc(t("stat_cats"))}</span></div>
       </div>
