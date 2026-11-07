@@ -1,6 +1,6 @@
 /* Catálogo de trading. Revisado con la biblioteca KDP el 7 de noviembre de 2026.
  * Una entrada por edición e idioma; ASIN del eBook cuando está disponible.
- * Las portadas enlazan con el CDN público de Amazon para reflejar las actualizaciones.
+ * Portadas del CDN público de Amazon y fichas que leen el catálogo actual.
  */
 const BOOKS = [
   {
@@ -14,7 +14,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FX4DPT55.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0dvs235r8",
@@ -27,7 +28,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DVS235R8.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fnk5rc58",
@@ -40,7 +42,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FNK5RC58.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h1mts8k6",
@@ -53,7 +56,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H1MTS8K6.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fqkph7jz",
@@ -66,7 +70,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FQKPH7JZ.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h379nwsg",
@@ -79,7 +84,8 @@ const BOOKS = [
       "ict"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H379NWSG.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h2fkb1rs",
@@ -93,7 +99,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H2FKB1RS.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0djpmsn9p",
@@ -106,7 +113,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DJPMSN9P.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0gyzzw54k",
@@ -119,7 +127,8 @@ const BOOKS = [
       "ict"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GYZZW54K.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fpbfl276",
@@ -133,7 +142,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FPBFL276.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0ft6s91f9",
@@ -146,7 +156,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FT6S91F9.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fnhcq86b",
@@ -159,7 +170,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FNHCQ86B.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0gzh82b8y",
@@ -172,7 +184,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GZH82B8Y.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fmsc4ttq",
@@ -185,7 +198,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FMSC4TTQ.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h273w52d",
@@ -199,7 +213,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H273W52D.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h2sp2lgn",
@@ -212,7 +227,8 @@ const BOOKS = [
       "ict"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H2SP2LGN.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fp9wxv15",
@@ -226,7 +242,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FP9WXV15.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0dk3ds5v8",
@@ -239,7 +256,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DK3DS5V8.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h1239kk5",
@@ -252,7 +270,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H1239KK5.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fndvlfql",
@@ -265,7 +284,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FNDVLFQL.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fms17xx9",
@@ -278,7 +298,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FMS17XX9.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fx166z49",
@@ -291,7 +312,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FX166Z49.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h2493qfj",
@@ -305,7 +327,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H2493QFJ.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h2z8r2gx",
@@ -318,7 +341,8 @@ const BOOKS = [
       "ict"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H2Z8R2GX.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fpcqcdnh",
@@ -332,7 +356,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FPCQCDNH.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0ft558d6j",
@@ -345,7 +370,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FT558D6J.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h1668znh",
@@ -358,7 +384,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H1668ZNH.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fnkqky34",
@@ -371,7 +398,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FNKQKY34.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fmznfyhj",
@@ -384,7 +412,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FMZNFYHJ.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fx54phzz",
@@ -397,7 +426,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FX54PHZZ.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h27yx9mh",
@@ -411,7 +441,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H27YX9MH.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0gx2xvqyd",
@@ -424,7 +455,8 @@ const BOOKS = [
       "ict"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GX2XVQYD.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0ft56jlv1",
@@ -437,7 +469,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FT56JLV1.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fpdd3npv",
@@ -451,7 +484,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FPDD3NPV.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h1j4x9cg",
@@ -464,7 +498,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H1J4X9CG.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fnkv16vv",
@@ -477,7 +512,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FNKV16VV.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fn3zrd1j",
@@ -490,7 +526,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FN3ZRD1J.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0fxb7s3tp",
@@ -503,7 +540,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FXB7S3TP.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0h2bgzctb",
@@ -517,7 +555,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H2BGZCTB.01.LZZZZZZZ.jpg",
-    "destacado": true
+    "destacado": true,
+    "ficha": true
   },
   {
     "id": "b0gg4yx9sd",
@@ -530,7 +569,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GG4YX9SD.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fpx16s23",
@@ -542,7 +582,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FPX16S23.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn6x6y2d",
@@ -554,7 +595,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN6X6Y2D.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fy3g3cg3",
@@ -566,7 +608,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FY3G3CG3.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn9qw3md",
@@ -579,7 +622,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN9QW3MD.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frdzgjnq",
@@ -592,7 +636,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRDZGJNQ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cnq2c31x",
@@ -605,7 +650,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CNQ2C31X.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cwkzymt4",
@@ -617,7 +663,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CWKZYMT4.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gx3b5wfy",
@@ -630,7 +677,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GX3B5WFY.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gl8kfvyr",
@@ -643,7 +691,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GL8KFVYR.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gp7bfwws",
@@ -655,7 +704,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GP7BFWWS.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn4tgwmr",
@@ -667,7 +717,8 @@ const BOOKS = [
       "velas"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN4TGWMR.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frrd8n4k",
@@ -680,7 +731,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRRD8N4K.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0d9vx2d8v",
@@ -693,7 +745,8 @@ const BOOKS = [
       "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0D9VX2D8V.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0hd1hsv26",
@@ -706,21 +759,23 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HD1HSV26.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fttftxnh",
     "asin": "B0FTTFTXNH",
-    "lang": "de",
+    "lang": "it",
     "titulo": "SMART MONEY VS MODELLI GRAFICI: Liquidità, manipolazione e strategia",
-    "descripcion": "Zwei Schulen im Vergleich: Was jeder Ansatz leistet, wann sie sich ergänzen und wie man beide in einer Strategie vereint.",
+    "descripcion": "Liquidità, manipolazione e strategia",
     "categorias": [
       "forex",
       "patrones",
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FTTFTXNH.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cymm8d26",
@@ -732,7 +787,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CYMM8D26.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cll1dt8b",
@@ -745,7 +801,8 @@ const BOOKS = [
       "patrones"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CLL1DT8B.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h59kqbds",
@@ -771,7 +828,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GNGCF9J4.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "wyckoff_4_moderne",
@@ -784,7 +842,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FQCG2FWN.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gfb87vlj",
@@ -797,7 +856,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GFB87VLJ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fprhyhlz",
@@ -809,20 +869,22 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FPRHYHLZ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h3l3b441",
     "asin": "B0H3L3B441",
-    "lang": "en",
+    "lang": "es",
     "titulo": "SCALPING FOREX: Estrategias para Operar en 5 Minutos",
-    "descripcion": "Concrete strategies for the 5-minute chart: entries, management and a scalper's full routine, ready to apply from day one.",
+    "descripcion": "Estrategias para Operar en 5 Minutos",
     "categorias": [
       "forex",
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H3L3B441.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dl711d8w",
@@ -834,7 +896,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DL711D8W.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frymz7nx",
@@ -847,7 +910,8 @@ const BOOKS = [
       "riesgo"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRYMZ7NX.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0hcvv7s37",
@@ -860,7 +924,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HCVV7S37.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0ftr183s9",
@@ -874,7 +939,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FTR183S9.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cqp8jx8h",
@@ -887,7 +953,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CQP8JX8H.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cw1h33l1",
@@ -899,7 +966,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CW1H33L1.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dwjzb78h",
@@ -911,7 +979,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DWJZB78H.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gp35ntqp",
@@ -923,7 +992,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GP35NTQP.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gl34vyf3",
@@ -936,7 +1006,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GL34VYF3.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frgj1zt2",
@@ -949,7 +1020,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRGJ1ZT2.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cnnkfhwc",
@@ -962,7 +1034,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CNNKFHWC.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dbmn9pr9",
@@ -975,7 +1048,8 @@ const BOOKS = [
       "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DBMN9PR9.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dllmrqfh",
@@ -987,7 +1061,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DLLMRQFH.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0clkc5trz",
@@ -1000,7 +1075,8 @@ const BOOKS = [
       "patrones"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CLKC5TRZ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gnhxd4nd",
@@ -1012,7 +1088,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GNHXD4ND.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h4lv3kyx",
@@ -1039,7 +1116,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GF4QGFTW.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0d9ttm3y6",
@@ -1052,7 +1130,8 @@ const BOOKS = [
       "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0D9TTM3Y6.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cljwnm8n",
@@ -1065,7 +1144,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CLJWNM8N.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frnnnj5q",
@@ -1078,7 +1158,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRNNNJ5Q.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cylpfwzk",
@@ -1090,7 +1171,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CYLPFWZK.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dl6k9h2m",
@@ -1102,7 +1184,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DL6K9H2M.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h3fbq8fz",
@@ -1115,7 +1198,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H3FBQ8FZ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frb47d5l",
@@ -1128,7 +1212,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRB47D5L.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cnm9h6q8",
@@ -1141,7 +1226,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CNM9H6Q8.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn52tzrv",
@@ -1153,7 +1239,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN52TZRV.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gnhzrw8v",
@@ -1165,7 +1252,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GNHZRW8V.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cmj9s92t",
@@ -1177,7 +1265,8 @@ const BOOKS = [
       "velas"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CMJ9S92T.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0hcm44mrj",
@@ -1190,7 +1279,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HCM44MRJ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0ftmb8m6k",
@@ -1204,7 +1294,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FTMB8M6K.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gp35r8yh",
@@ -1216,7 +1307,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GP35R8YH.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gjsw3z2g",
@@ -1229,7 +1321,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GJSW3Z2G.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dllj7v2d",
@@ -1241,7 +1334,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DLLJ7V2D.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cm9rm559",
@@ -1254,7 +1348,8 @@ const BOOKS = [
       "patrones"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CM9RM559.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "wyckoff_3_analisis",
@@ -1267,7 +1362,8 @@ const BOOKS = [
       "wyckoff"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CLKW996K.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gfp1r3f4",
@@ -1280,7 +1376,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GFP1R3F4.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0ftt15qgc",
@@ -1294,7 +1391,8 @@ const BOOKS = [
       "smc"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FTT15QGC.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn5qvyh7",
@@ -1306,7 +1404,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN5QVYH7.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gl92mdkq",
@@ -1319,7 +1418,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GL92MDKQ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h14htv7b",
@@ -1332,7 +1432,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H14HTV7B.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0d9wslrpn",
@@ -1345,7 +1446,8 @@ const BOOKS = [
       "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0D9WSLRPN.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fryg1ms9",
@@ -1358,20 +1460,22 @@ const BOOKS = [
       "riesgo"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRYG1MS9.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dmmhl8c2",
     "asin": "B0DMMHL8C2",
-    "lang": "fr",
+    "lang": "en",
     "titulo": "AI, DeFi, and Psychology in the New Era of Trading: The Modern Trader 2.0",
-    "descripcion": "Intelligence artificielle, finance décentralisée et psychologie : comment la nouvelle ère technologique transforme le trading et comment s'y adapter.",
+    "descripcion": "The Modern Trader 2.0",
     "categorias": [
       "otros",
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DMMHL8C2.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cy3kszvd",
@@ -1383,7 +1487,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CY3KSZVD.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dlbcxd99",
@@ -1395,7 +1500,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DLBCXD99.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fy6hlk39",
@@ -1407,20 +1513,22 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FY6HLK39.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frmlvkvv",
     "asin": "B0FRMLVKVV",
-    "lang": "fr",
+    "lang": "it",
     "titulo": "La struttura e l'armonia del prezzo 2.0: Trading con liquidità",
-    "descripcion": "Comment et pourquoi le prix évolue : structure, liquidité et corrections pour anticiper les zones de retournement sans indicateurs.",
+    "descripcion": "Trading con liquidità",
     "categorias": [
       "forex",
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRMLVKVV.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn42yty8",
@@ -1432,7 +1540,8 @@ const BOOKS = [
       "velas"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN42YTY8.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gns67sn5",
@@ -1458,7 +1567,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H3WW6R5M.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0hd2qgkxp",
@@ -1471,7 +1581,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HD2QGKXP.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gp9pv8ql",
@@ -1483,7 +1594,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GP9PV8QL.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cll246bf",
@@ -1496,7 +1608,8 @@ const BOOKS = [
       "patrones"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CLL246BF.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn5xsngn",
@@ -1508,7 +1621,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN5XSNGN.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gl9llrxb",
@@ -1521,7 +1635,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GL9LLRXB.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h4rx13tt",
@@ -1534,7 +1649,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H4RX13TT.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0d9ygsmry",
@@ -1547,7 +1663,8 @@ const BOOKS = [
       "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0D9YGSMRY.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frzkjwyq",
@@ -1560,7 +1677,8 @@ const BOOKS = [
       "riesgo"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRZKJWYQ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frxkbqsn",
@@ -1573,7 +1691,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRXKBQSN.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gfxx61rh",
@@ -1586,7 +1705,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GFXX61RH.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cyq8dgtx",
@@ -1598,7 +1718,8 @@ const BOOKS = [
       "indicadores"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CYQ8DGTX.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dl7wl561",
@@ -1610,7 +1731,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DL7WL561.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0fy4kn46d",
@@ -1622,20 +1744,22 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FY4KN46D.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0frhzjpfz",
     "asin": "B0FRHZJPFZ",
-    "lang": "it",
+    "lang": "fr",
     "titulo": "La structure et l'harmonie du prix: Trading avec liquidité",
-    "descripcion": "Come e perché si muove il prezzo: struttura, liquidità e correzioni per anticipare le zone di inversione senza indicatori.",
+    "descripcion": "Trading avec liquidité",
     "categorias": [
       "forex",
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FRHZJPFZ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cnnpb4xj",
@@ -1648,7 +1772,8 @@ const BOOKS = [
       "priceaction"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CNNPB4XJ.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0cn4qndrp",
@@ -1660,7 +1785,8 @@ const BOOKS = [
       "velas"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CN4QNDRP.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gnnyxvmf",
@@ -1672,7 +1798,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GNNYXVMF.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0hd9n628l",
@@ -1685,7 +1812,8 @@ const BOOKS = [
       "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HD9N628L.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0h41wqrfs",
@@ -1698,7 +1826,8 @@ const BOOKS = [
       "scalping"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0H41WQRFS.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0gp9t7xnt",
@@ -1710,7 +1839,8 @@ const BOOKS = [
       "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0GP9T7XNT.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dlq3b1sl",
@@ -1722,7 +1852,8 @@ const BOOKS = [
       "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0DLQ3B1SL.01.LZZZZZZZ.jpg",
-    "destacado": false
+    "destacado": false,
+    "ficha": true
   },
   {
     "id": "b0dbnyhd94",
@@ -1867,8 +1998,7 @@ const BOOKS = [
     "titulo": "DAY TRADING CON METODO: Guida pratica per leggere il mercato, gestire il rischio e fare trading intraday con disciplina",
     "descripcion": "Guida pratica per leggere il mercato, gestire il rischio e fare trading intraday con disciplina",
     "categorias": [
-      "forex",
-      "ejercicios"
+      "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HNKPLH6J.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -1881,8 +2011,7 @@ const BOOKS = [
     "titulo": "DAY TRADING AVEC MÉTHODE: Guide pratique pour lire le marché, gérer le risque et trader en intraday avec discipline",
     "descripcion": "Guide pratique pour lire le marché, gérer le risque et trader en intraday avec discipline",
     "categorias": [
-      "forex",
-      "ejercicios"
+      "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HC7W1KYQ.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -1908,8 +2037,7 @@ const BOOKS = [
     "titulo": "DAY TRADING WITH A METHOD: A Practical Guide to Reading the Market, Managing Risk, and Trading with Discipline",
     "descripcion": "A Practical Guide to Reading the Market, Managing Risk, and Trading with Discipline",
     "categorias": [
-      "forex",
-      "ejercicios"
+      "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HM25PPLQ.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -1922,8 +2050,7 @@ const BOOKS = [
     "titulo": "DAY TRADING CON MÉTODO: Guía práctica para leer el mercado, gestionar el riesgo y operar intradía con disciplina",
     "descripcion": "Guía práctica para leer el mercado, gestionar el riesgo y operar intradía con disciplina",
     "categorias": [
-      "forex",
-      "ejercicios"
+      "forex"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HM15J4DY.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -1978,8 +2105,8 @@ const BOOKS = [
     "titulo": "AI Powered Trading: DeFi Psychology and Risk Management for Modern Investors",
     "descripcion": "DeFi Psychology and Risk Management for Modern Investors",
     "categorias": [
-      "forex",
-      "riesgo"
+      "otros",
+      "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HKG5QG9K.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -1992,8 +2119,8 @@ const BOOKS = [
     "titulo": "Trading inteligente en la era de la IA: DeFi psicología y gestión del riesgo para el inversor moderno",
     "descripcion": "DeFi psicología y gestión del riesgo para el inversor moderno",
     "categorias": [
-      "forex",
-      "riesgo"
+      "otros",
+      "psicologia"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0HK1J2C7B.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -2156,7 +2283,8 @@ const BOOKS = [
     "descripcion": "Liquidität, Manipulation und Strategie",
     "categorias": [
       "forex",
-      "smc"
+      "smc",
+      "patrones"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FTNH5B1P.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -2247,8 +2375,7 @@ const BOOKS = [
     "titulo": "LA BOLSA PARA PRINCIPIANTES 2.0: Guía práctica para comprender e invertir en los mercados globales",
     "descripcion": "Guía práctica para comprender e invertir en los mercados globales",
     "categorias": [
-      "forex",
-      "ejercicios"
+      "otros"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0FXYDX6F4.01.LZZZZZZZ.jpg",
     "destacado": false,
@@ -2354,7 +2481,8 @@ const BOOKS = [
     "titulo": "Practical Trading Exercises: Real-Time Analysis 1.0: Strategies and Patterns",
     "descripcion": "Real-Time Analysis 1.0: Strategies and Patterns",
     "categorias": [
-      "patrones"
+      "forex",
+      "ejercicios"
     ],
     "portada": "https://images-na.ssl-images-amazon.com/images/P/B0CWQG31BJ.01.LZZZZZZZ.jpg",
     "destacado": false,
